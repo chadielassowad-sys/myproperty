@@ -1316,27 +1316,23 @@ body {
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    color: var(--bg-white);
-    transition: var(--transition);
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s ease;
     text-decoration: none;
 }
 
 .social-icon:hover {
-    background: var(--secondary-color);
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(201, 169, 97, 0.3);
+    color: #fff;
 }
 
 .social-icon svg {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
 }
 
 .footer-section h4 {
