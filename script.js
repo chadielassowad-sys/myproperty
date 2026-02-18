@@ -1739,10 +1739,8 @@ function updateLanguageDisplay() {
     const lang = languageData[currentLanguage];
     if (!lang) return;
 
-    const flagEl = document.getElementById('currentFlag');
     const codeEl = document.getElementById('currentLang');
     
-    if (flagEl) flagEl.textContent = lang.flag;
     if (codeEl) codeEl.textContent = lang.code;
 }
 

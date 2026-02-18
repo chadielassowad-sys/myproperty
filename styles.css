@@ -236,15 +236,14 @@ body {
 }
 
 .lang-flag {
-    font-size: 18px;
-    line-height: 1;
-    display: inline-block;
+    display: none; /* Emojis retirés */
 }
 
 .lang-code {
     font-size: 12px;
     letter-spacing: 0.5px;
     font-weight: 600;
+    display: inline-block;
 }
 
 .lang-arrow {
@@ -320,8 +319,7 @@ body {
 }
 
 .lang-option .lang-flag {
-    font-size: 20px;
-    flex-shrink: 0;
+    display: none; /* Emojis retirés */
 }
 
 .lang-name {
@@ -1545,11 +1543,12 @@ body {
     }
 
     .lang-flag {
-        font-size: 16px;
+        display: none; /* Emojis retirés */
     }
 
     .lang-code {
         font-size: 11px;
+        display: inline-block;
     }
 
     .lang-dropdown {
