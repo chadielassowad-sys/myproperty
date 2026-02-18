@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - MYPROPERTY | Votre Partenaire de Confiance à Marrakech</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ===========================
+           ABOUT PAGE — SPECIFIC STYLES
+        =========================== */
+
+        /* Hero */
+        .ap-hero {
+            position: relative;
+            height: 520px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ap-hero-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .ap-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(26,26,26,0.72) 0%, rgba(180,30,50,0.35) 100%);
+        }
+
+        .ap-hero-content {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+            max-width: 800px;
+        }
+
+        .ap-hero-label {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--secondary-color);
+            margin-bottom: 18px;
+            border: 1px solid var(--secondary-color);
+            padding: 6px 18px;
+            border-radius: 20px;
+        }
+
+        .ap-hero-title {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+            margin-bottom: 18px;
+        }
+
+        .ap-hero-subtitle {
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.85);
+            max-width: 580px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Breadcrumb */
+        .ap-breadcrumb {
+            background: var(--bg-cream);
+            border-bottom: 1px solid var(--border-color);
+            padding: 14px 0;
+        }
+
+        .ap-breadcrumb-inner {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .ap-breadcrumb a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .ap-breadcrumb a:hover { color: var(--primary-color); }
+
+        .ap-breadcrumb-sep {
+            color: var(--border-color);
+        }
+
+        .ap-breadcrumb-current {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        /* Story Section */
+        .ap-story {
+            padding: 100px 0 80px;
+            background: var(--bg-white);
+        }
+
+        .ap-story-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .ap-label {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            margin-bottom: 16px;
+        }
+
+        .ap-story-title {
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--text-dark);
+            margin-bottom: 28px;
+            letter-spacing: -0.3px;
+        }
+
+        .ap-story-text p {
+            color: var(--text-medium);
+            margin-bottom: 18px;
+            font-size: 0.97rem;
+            line-height: 1.85;
+        }
+
+        .ap-story-img-wrap {
+            position: relative;
+        }
+
+        .ap-story-img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 4px;
+            display: block;
+        }
+
+        .ap-story-badge {
+            position: absolute;
+            bottom: -24px;
+            left: -24px;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 28px 32px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .ap-story-badge-num {
+            display: block;
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .ap-story-badge-text {
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            opacity: 0.9;
+            margin-top: 6px;
+        }
+
+        /* Stats */
+        .ap-stats {
+            background: var(--text-dark);
+            padding: 70px 0;
+        }
+
+        .ap-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            text-align: center;
+        }
+
+        .ap-stat-item {
+            border-right: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .ap-stat-item:last-child { border-right: none; }
+
+        .ap-stat-num {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .ap-stat-label {
+            font-size: 13px;
+            color: rgba(255,255,255,0.65);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Services Section */
+        .ap-services {
+            padding: 100px 0;
+            background: var(--bg-cream);
+        }
+
+        .ap-section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .ap-section-title {
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+            letter-spacing: -0.3px;
+        }
+
+        .ap-section-subtitle {
+            color: var(--text-light);
+            max-width: 560px;
+            margin: 0 auto;
+            font-size: 0.97rem;
+            line-height: 1.7;
+        }
+
+        .ap-services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .ap-service-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 40px 32px;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ap-service-card::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--primary-color);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .ap-service-card:hover {
+            border-color: transparent;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+            transform: translateY(-4px);
+        }
+
+        .ap-service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .ap-service-icon {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin: 0 auto 24px;
+            display: block;
+        }
+
+        .ap-service-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            letter-spacing: 0.2px;
+        }
+
+        .ap-service-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* Marrakech / Gallery Section */
+        .ap-marrakech {
+            padding: 100px 0;
+            background: var(--bg-white);
+        }
+
+        .ap-marrakech-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .ap-marrakech-imgs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 260px 180px;
+            gap: 14px;
+        }
+
+        .ap-marrakech-imgs img:first-child {
+            grid-column: 1 / -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .ap-marrakech-imgs img:not(:first-child) {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .ap-marrakech-text h2 {
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 24px;
+            letter-spacing: -0.3px;
+            line-height: 1.3;
+        }
+
+        .ap-marrakech-text p {
+            color: var(--text-medium);
+            margin-bottom: 18px;
+            font-size: 0.97rem;
+            line-height: 1.85;
+        }
+
+        /* Values */
+        .ap-values {
+            padding: 100px 0;
+            background: var(--bg-cream);
+        }
+
+        .ap-values-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-top: 60px;
+        }
+
+        .ap-value-item {
+            background: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 36px 32px;
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+            transition: var(--transition);
+        }
+
+        .ap-value-item:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+
+        .ap-value-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(220, 20, 60, 0.08);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .ap-value-icon svg {
+            stroke: var(--primary-color);
+        }
+
+        .ap-value-content h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .ap-value-content p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* CTA */
+        .ap-cta {
+            padding: 100px 0;
+            background: var(--primary-color);
+            text-align: center;
+        }
+
+        .ap-cta h2 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 18px;
+            letter-spacing: -0.5px;
+        }
+
+        .ap-cta p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1.05rem;
+            margin-bottom: 40px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .ap-cta-btn {
+            display: inline-block;
+            background: #fff;
+            color: var(--primary-color);
+            padding: 16px 48px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .ap-cta-btn:hover {
+            background: var(--secondary-color);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 960px) {
+            .ap-story-inner,
+            .ap-marrakech-inner {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .ap-story-badge {
+                bottom: 20px;
+                left: 20px;
+            }
+
+            .ap-stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            .ap-stat-item { border-right: none; }
+
+            .ap-services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .ap-values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .ap-marrakech-imgs {
+                grid-template-rows: 200px 140px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .ap-hero { height: 380px; }
+
+            .ap-services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .ap-stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .ap-marrakech-imgs {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            .ap-marrakech-imgs img:first-child {
+                height: 220px;
+            }
+
+            .ap-marrakech-imgs img:not(:first-child) {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>En utilisant MYPROPERTY, vous acceptez l'utilisation de cookies. Nous le faisons pour vous offrir un meilleur service adapté à vos intérêts. <a href="#">Plus d'infos</a></p>
+            <button class="cookie-close" onclick="closeCookieBanner()">Fermer</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" alt="MYPROPERTY Logo"></a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html#villas">NOS VILLAS</a></li>
+                        <li><a href="apropos.html" class="active-nav">À PROPOS</a></li>
+                        <li><a href="index.html#contact">CONTACT</a></li>
+                        <li><a href="index.html#magazine">MAGAZINE</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="language-selector" id="languageSelector">
+                        <button class="lang-btn" id="langBtn" aria-label="Changer la langue">
+                            <span class="lang-flag" id="currentFlag">🇫🇷</span>
+                            <span class="lang-code" id="currentLang">FR</span>
+                            <svg class="lang-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="lang-dropdown" id="langDropdown">
+                            <button class="lang-option" data-lang="fr" data-flag="🇫🇷">
+                                <span class="lang-flag">🇫🇷</span>
+                                <span class="lang-name">Français</span>
+                            </button>
+                            <button class="lang-option" data-lang="en" data-flag="🇬🇧">
+                                <span class="lang-flag">🇬🇧</span>
+                                <span class="lang-name">English</span>
+                            </button>
+                            <button class="lang-option" data-lang="es" data-flag="🇪🇸">
+                                <span class="lang-flag">🇪🇸</span>
+                                <span class="lang-name">Español</span>
+                            </button>
+                            <button class="lang-option" data-lang="it" data-flag="🇮🇹">
+                                <span class="lang-flag">🇮🇹</span>
+                                <span class="lang-name">Italiano</span>
+                            </button>
+                            <button class="lang-option" data-lang="de" data-flag="🇩🇪">
+                                <span class="lang-flag">🇩🇪</span>
+                                <span class="lang-name">Deutsch</span>
+                            </button>
+                        </div>
+                    </div>
+                    <span class="selection-count">MA SÉLECTION - <span id="selectionCount">0</span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="ap-hero">
+        <img src="apropos/ballooningmarrakech-dWxv34XewXigJZ6b.avif" alt="Marrakech vue du ciel" class="ap-hero-img">
+        <div class="ap-hero-overlay"></div>
+        <div class="ap-hero-content">
+            <span class="ap-hero-label">Notre Histoire</span>
+            <h1 class="ap-hero-title">MYPROPERTY<br>L'Excellence à Marrakech</h1>
+            <p class="ap-hero-subtitle">Votre partenaire de confiance pour des séjours d'exception dans la ville ocre depuis 2015</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="ap-breadcrumb">
+        <div class="container">
+            <div class="ap-breadcrumb-inner">
+                <a href="index.html">Accueil</a>
+                <span class="ap-breadcrumb-sep">›</span>
+                <span class="ap-breadcrumb-current">À Propos</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Story Section -->
+    <section class="ap-story">
+        <div class="container">
+            <div class="ap-story-inner">
+                <div class="ap-story-text">
+                    <span class="ap-label">Notre Histoire</span>
+                    <h2 class="ap-story-title">Une passion pour l'hospitalité marocaine depuis 2015</h2>
+                    <div class="ap-story-text">
+                        <p>Fondée à Marrakech en 2015, MYPROPERTY est née d'une conviction simple : chaque voyageur mérite un séjour d'exception, dans un cadre authentique et raffiné. Nous avons bâti notre réputation sur la sélection rigoureuse de villas d'exception, chacune choisie pour son caractère, son confort et sa situation privilégiée.</p>
+                        <p>Notre équipe, composée de professionnels passionnés, connaît intimement chaque propriété de notre collection. Nous agissons en véritable partenaire de votre séjour, de la première prise de contact jusqu'à votre départ, en veillant à ce que chaque détail soit parfaitement orchestré.</p>
+                        <p>Chez MYPROPERTY, la confiance est notre valeur fondamentale. Chaque villa est inspectée, validée et entretenue selon nos standards exigeants, pour vous garantir une expérience sans surprise — uniquement des moments inoubliables.</p>
+                    </div>
+                </div>
+                <div class="ap-story-img-wrap">
+                    <img src="apropos/marrakech.jpg" alt="Marrakech" class="ap-story-img">
+                    <div class="ap-story-badge">
+                        <span class="ap-story-badge-num">9+</span>
+                        <span class="ap-story-badge-text">Années d'expérience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="ap-stats">
+        <div class="container">
+            <div class="ap-stats-grid">
+                <div class="ap-stat-item">
+                    <div class="ap-stat-num">9+</div>
+                    <div class="ap-stat-label">Villas d'Exception</div>
+                </div>
+                <div class="ap-stat-item">
+                    <div class="ap-stat-num">500+</div>
+                    <div class="ap-stat-label">Clients Satisfaits</div>
+                </div>
+                <div class="ap-stat-item">
+                    <div class="ap-stat-num">9</div>
+                    <div class="ap-stat-label">Années d'Expertise</div>
+                </div>
+                <div class="ap-stat-item">
+                    <div class="ap-stat-num">24/7</div>
+                    <div class="ap-stat-label">Support Disponible</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="ap-services">
+        <div class="container">
+            <div class="ap-section-header">
+                <span class="ap-label">Ce que nous offrons</span>
+                <h2 class="ap-section-title">Des services pensés pour votre confort</h2>
+                <p class="ap-section-subtitle">Bien plus qu'une simple location, MYPROPERTY vous propose un accompagnement complet pour un séjour parfaitement maîtrisé, de l'arrivée au départ.</p>
+            </div>
+            <div class="ap-services-grid">
+
+                <div class="ap-service-card">
+                    <img src="icon/Navette Aéroport.png" alt="Navette Aéroport" class="ap-service-icon">
+                    <h3 class="ap-service-title">Navette Aéroport</h3>
+                    <p class="ap-service-desc">Transfert confortable et ponctuel depuis l'aéroport Marrakech-Ménara jusqu'à votre villa, avec accueil personnalisé à l'arrivée.</p>
+                </div>
+
+                <div class="ap-service-card">
+                    <img src="icon/Conciergerie Premium.png" alt="Conciergerie Premium" class="ap-service-icon">
+                    <h3 class="ap-service-title">Conciergerie Premium</h3>
+                    <p class="ap-service-desc">Notre équipe de concierges dédiée est disponible à toute heure pour répondre à vos demandes et vous faciliter la vie au quotidien.</p>
+                </div>
+
+                <div class="ap-service-card">
+                    <img src="icon/Chef à Domicile.png" alt="Chef à Domicile" class="ap-service-icon">
+                    <h3 class="ap-service-title">Chef à Domicile</h3>
+                    <p class="ap-service-desc">Savourez la gastronomie marocaine et internationale dans l'intimité de votre villa, préparée par nos chefs expérimentés sur mesure.</p>
+                </div>
+
+                <div class="ap-service-card">
+                    <img src="icon/Guides Locaux.png" alt="Guides Locaux" class="ap-service-icon">
+                    <h3 class="ap-service-title">Guides Locaux</h3>
+                    <p class="ap-service-desc">Explorez Marrakech et ses environs avec nos guides experts, passionnés par leur ville, qui vous révèlent les trésors cachés de la région.</p>
+                </div>
+
+                <div class="ap-service-card">
+                    <img src="icon/Support 247.png" alt="Support 24/7" class="ap-service-icon">
+                    <h3 class="ap-service-title">Support 24/7</h3>
+                    <p class="ap-service-desc">Une assistance disponible à tout moment, jour et nuit, pour vous garantir une totale tranquillité d'esprit tout au long de votre séjour.</p>
+                </div>
+
+                <div class="ap-service-card">
+                    <img src="icon/Nettoyage Quotidien.png" alt="Nettoyage Quotidien" class="ap-service-icon">
+                    <h3 class="ap-service-title">Nettoyage Quotidien</h3>
+                    <p class="ap-service-desc">Un service d'entretien quotidien assure que votre villa demeure impeccable tout au long de votre séjour, dans chaque espace de vie.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Marrakech Section -->
+    <section class="ap-marrakech">
+        <div class="container">
+            <div class="ap-marrakech-inner">
+                <div class="ap-marrakech-imgs">
+                    <img src="apropos/GettyImages-2196640486.webp" alt="Marrakech">
+                    <img src="apropos/marrakech.jpg" alt="Marrakech">
+                    <img src="apropos/ballooningmarrakech-dWxv34XewXigJZ6b.avif" alt="Marrakech vue du ciel">
+                </div>
+                <div class="ap-marrakech-text">
+                    <span class="ap-label">La Ville Ocre</span>
+                    <h2>Marrakech, une destination de prestige</h2>
+                    <p>Nichée au pied des montagnes de l'Atlas, Marrakech est une ville envoûtante qui captive ses visiteurs dès le premier regard. De la place emblématique Jemaa el-Fnaa aux jardins paisibles de la Ménara, des souks colorés de la médina aux palaces discrets des quartiers résidentiels, chaque coin de la ville raconte une histoire.</p>
+                    <p>Nos villas sont situées dans les quartiers les plus prisés de la ville et de ses environs — palmeraie, route de Fès, route de l'Ourika — vous permettant de profiter d'un cadre d'exception tout en restant à quelques minutes des richesses culturelles et gastronomiques de Marrakech.</p>
+                    <a href="index.html#villas" class="ap-cta-btn" style="background: var(--primary-color); color: #fff; display: inline-block; padding: 14px 36px; border-radius: 4px; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; transition: all 0.3s; margin-top: 10px;">Découvrir nos villas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="ap-values">
+        <div class="container">
+            <div class="ap-section-header">
+                <span class="ap-label">Ce qui nous définit</span>
+                <h2 class="ap-section-title">Nos valeurs fondamentales</h2>
+            </div>
+            <div class="ap-values-grid">
+
+                <div class="ap-value-item">
+                    <div class="ap-value-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="ap-value-content">
+                        <h3>Excellence</h3>
+                        <p>Nous visons la perfection dans chaque détail, de la sélection de nos villas à la qualité de nos services. Votre satisfaction est notre exigence quotidienne.</p>
+                    </div>
+                </div>
+
+                <div class="ap-value-item">
+                    <div class="ap-value-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="ap-value-content">
+                        <h3>Confiance</h3>
+                        <p>Depuis 2015, nous bâtissons des relations durables avec nos clients. Transparence et honnêteté sont au cœur de chacune de nos interactions.</p>
+                    </div>
+                </div>
+
+                <div class="ap-value-item">
+                    <div class="ap-value-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 8v4l3 3"></path>
+                        </svg>
+                    </div>
+                    <div class="ap-value-content">
+                        <h3>Disponibilité</h3>
+                        <p>Notre équipe est joignable à tout moment, avant, pendant et après votre séjour. Nous sommes là pour vous, sans exception.</p>
+                    </div>
+                </div>
+
+                <div class="ap-value-item">
+                    <div class="ap-value-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <div class="ap-value-content">
+                        <h3>Authenticité</h3>
+                        <p>Nous préservons l'âme marocaine dans chaque propriété que nous proposons, alliant confort moderne et patrimoine culturel pour une expérience vraiment unique.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="ap-cta">
+        <div class="container">
+            <h2>Prêt à vivre votre séjour d'exception ?</h2>
+            <p>Contactez notre équipe dès aujourd'hui et laissez-nous orchestrer votre escapade parfaite à Marrakech.</p>
+            <a href="index.html#contact" class="ap-cta-btn">Nous contacter</a>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/33641915609" target="_blank" class="whatsapp-button" aria-label="Contactez-nous sur WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MYPROPERTY</h4>
+                    <p>Votre partenaire de confiance pour des séjours de luxe à Marrakech</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/33641915609" target="_blank" aria-label="WhatsApp" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html#villas">Nos Villas</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:contact@mypropertymarrakech.com">contact@mypropertymarrakech.com</a></p>
+                    <p>Téléphone: <a href="tel:+33641915609">+33 6 41 91 56 09</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MYPROPERTY. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
