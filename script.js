@@ -1,7 +1,7 @@
 // Villas Data
 const villasData = {
-    leila: {
-        name: 'Villa Leila',
+    amel: {
+        name: 'Villa Amel',
         price: 950,
         location: 'Marrakech, Marrakesh-Safi, Maroc',
         description: 'À seulement 20 minutes du centre-ville de Marrakech, sur la route de Fès, cette somptueuse villa de 5 suites vous accueille dans un écrin de verdure de 4000m².',
@@ -179,23 +179,6 @@ const villasData = {
             'villa%20shirine/WhatsApp%20Image%202026-02-17%20at%2011.22.00%20AM%20(6).jpeg'
         ]
     },
-    leilagolf: {
-        name: 'Villa Leila',
-        price: 750,
-        location: 'Sur Golf, Marrakech — 15 min du centre',
-        description: 'Somptueuse villa de six suites bordant les fairways d\'un golf prestigieux, à quinze minutes du centre de Marrakech. Un espace de vie raffiné alliant piscine chauffée, salle de cinéma privée et hammam traditionnel, pour une expérience de séjour d\'un niveau d\'excellence rare.',
-        features: ['6 Suites', 'Sur Golf', 'Piscine Chauffée', 'Salle de Cinéma', 'Hammam'],
-        images: [
-            'villaleila/Villa-Laila-Villacacher-8.jpeg',
-            'villaleila/Villa-Laila-Villacacher-2.jpeg',
-            'villaleila/Villa-Laila-Villacacher-4.jpeg',
-            'villaleila/Villa-Laila-Villacacher-6.jpeg',
-            'villaleila/Villa-Laila-Villacacher-7.jpeg',
-            'villaleila/Villa-Laila-Villacacher-10.jpeg',
-            'villaleila/Villa-Laila-Villacacher-11.jpeg',
-            'villaleila/Villa-Laila-Villacacher-12.jpeg'
-        ]
-    },
     sofia: {
         name: 'Villa Sofia',
         price: 800,
@@ -203,8 +186,8 @@ const villasData = {
         description: 'Somptueuse villa de six suites implantée sur la route de Fès, à quinze minutes du centre historique de Marrakech. Ses espaces lumineux, ses finitions haut de gamme et sa piscine chauffée en font l\'adresse idéale pour un séjour de prestige alliant intimité et raffinement.',
         features: ['6 Suites', 'Piscine Chauffée', 'Wifi', 'Parking', 'Climatisation'],
         images: [
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM.jpeg',
             'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(1).jpeg',
+            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM.jpeg',
             'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(2).jpeg',
             'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(3).jpeg',
             'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(4).jpeg',
@@ -289,8 +272,8 @@ const villasData = {
             'domaine%20youness/WhatsApp%20Image%202026-02-17%20at%2011.26.59%20AM%20(7).jpeg'
         ]
     },
-    ahmed: {
-        name: 'Domaine Ahmed',
+    rayan: {
+        name: 'Domaine Rayan',
         price: 2800,
         location: 'Palmeraie, Marrakech — 25 min du centre',
         description: 'Domaine d\'exception situé à vingt-cinq minutes du centre-ville, au cœur du cadre prestigieux de la Palmeraie. S\'étendant sur un parc majestueux de deux hectares, cet écrin de verdure offre un cadre hors du temps, alliant sérénité absolue et prestige, pour des événements d\'exception ou des séjours inoubliables en groupe. Le domaine se compose de trois villas indépendantes totalisant dix-sept suites de grand luxe, chacune disposant de sa propre salle de bains privative. Trois piscines chauffées permettent de profiter de la douceur de Marrakech tout au long de l\'année dans un cadre raffiné et exclusif.',
@@ -309,6 +292,466 @@ const villasData = {
             'domaine%20ahmed/domaine-noam-17-chambre_-50.jpeg',
             'domaine%20ahmed/domaine-noam-17-chambre_-53.jpeg',
             'domaine%20ahmed/domaine-noam-17-chambre_-54.jpeg'
+        ]
+    },
+    iman: {
+        name: 'Villa Iman',
+        price: 1600,
+        location: 'Marrakech, la Palmeraie — 25 min du centre',
+        description: 'La Villa Iman est une magnifique propriété située dans la Palmeraie, à seulement 25 minutes du centre-ville, idéale pour un séjour au calme. Cette villa spacieuse dispose de dix chambres et peut accueillir jusqu\'à vingt personnes, sur un terrain de 10 000 m² offrant un cadre exceptionnel pour des séjours en groupe ou des événements privés.',
+        features: ['10 Chambres', '20 Personnes', 'Terrain de 10 000 m²'],
+        images: [
+            'villa%20iman/Riad-Zaky-14.jpeg',
+            'villa%20iman/5f4dd025-3aaf-4ad0-97db-e69957a14ac3.jpeg',
+            'villa%20iman/4cf08c93-0540-4a98-918e-f4760d2ff462.jpeg',
+            'villa%20iman/4af24a93-5a87-483d-9f99-70e61d160a8a.jpeg',
+            'villa%20iman/1ed697b9-92a6-4c76-95eb-b4a18979ccf4.jpeg',
+            'villa%20iman/02a60b9e-21a3-4e11-a771-8cc79300f3cd.jpeg',
+            'villa%20iman/fd2682ec-e755-4da8-a8e3-86a45c74fe3e.jpeg',
+            'villa%20iman/f90fcd38-ba54-47b1-9e54-cbc6f37dfbd9.jpeg',
+            'villa%20iman/e677108d-0f21-44a6-9de2-dd357342ae45.jpeg',
+            'villa%20iman/e9b43791-7cfc-4428-85bf-db333d0c20b1.jpeg',
+            'villa%20iman/e09cee96-dc77-4720-b47b-29109ddf2d8d.jpeg',
+            'villa%20iman/dcc06929-56b8-4824-ab95-b22fd1705667.jpeg',
+            'villa%20iman/d307d48f-a74e-4b20-9d25-c37081d418b6.jpeg',
+            'villa%20iman/d18cb2b8-d880-405d-bbc4-7d3ea4969f56.jpeg',
+            'villa%20iman/cf095f57-3282-4f93-ab5c-2e977e854cd5.jpeg',
+            'villa%20iman/c534c17b-4c7f-4857-aa38-dfd6ec0f07e4.jpeg',
+            'villa%20iman/ab7f15d2-318b-4eb9-a779-b883a6ee5c03.jpeg',
+            'villa%20iman/a298805f-24b0-4c42-a2db-cef601a33188.jpeg',
+            'villa%20iman/a10a3b2d-543e-41cd-b4a6-f1c62d56fc8e.jpeg',
+            'villa%20iman/5667a258-fc07-4473-bbdd-5177098dfe6a.jpeg',
+            'villa%20iman/81459a13-8e8e-4a73-aff2-8a8eb916d970.jpeg',
+            'villa%20iman/442f141c-e0a0-4fa5-afac-cb96cbd6f069.jpeg',
+            'villa%20iman/112f3be8-a922-4e9a-8ce0-d74e9a9845a9.jpeg',
+            'villa%20iman/97e655c0-dd70-44e2-a45e-2d39b0dd9d92.jpeg',
+            'villa%20iman/073c86a4-4198-4286-b9e3-3101668e9b0a.jpeg',
+            'villa%20iman/054ba600-4300-4f1e-a707-a791ddf06435.jpeg',
+            'villa%20iman/30b06f40-7d1f-4f75-97f2-feeac8ce408b.jpeg',
+            'villa%20iman/07d64ded-ac07-4c5f-8e19-d3d09903474f.jpeg'
+        ]
+    },
+    sonia: {
+        name: 'Villa Sonia',
+        price: 800,
+        location: 'Marrakech, Marrakesh-Safi, Maroc — 15 min du centre-ville, Golf d\'Amelkis',
+        description: 'Cette magnifique villa se trouve à 15 min du centre-ville, au sein du Golf d\'Amelkis. Cette propriété d\'exception dispose de six suites, offrant un séjour de prestige dans un cadre raffiné avec piscine privée et tous les équipements modernes pour votre confort.',
+        features: ['6 Suites', 'Wifi', 'Parking', 'Piscine Privée', 'Télévision', 'Climatisation'],
+        images: [
+            'villa%20lina/Sonia_001-1.jpg.jpeg',
+            'villa%20lina/Sonia_001-3.jpg.jpeg',
+            'villa%20lina/Sonia_001-5.jpg.jpeg',
+            'villa%20lina/Sonia_001-6.jpg.jpeg',
+            'villa%20lina/Sonia_001-7.jpg.jpeg',
+            'villa%20lina/Sonia_001-8.jpg.jpeg',
+            'villa%20lina/Sonia_001-12.jpg.jpeg',
+            'villa%20lina/Sonia_001-13.jpg.jpeg',
+            'villa%20lina/Sonia_001-16.jpg.jpeg',
+            'villa%20lina/Sonia_001-19.jpg.jpeg',
+            'villa%20lina/Sonia_001-20.jpg.jpeg',
+            'villa%20lina/Sonia_001-21.jpg.jpeg',
+            'villa%20lina/Sonia_001-28.jpg.jpeg',
+            'villa%20lina/Sonia_001-29.jpg.jpeg'
+        ]
+    },
+    zaky: {
+        name: 'Riad Zaky',
+        price: 650,
+        location: 'Marrakech, Marrakesh-Safi, Maroc — La Palmeraie',
+        description: 'Riad de 5 chambres, point de départ idéal pour explorer la ville ocre et ses environs. La Palmeraie vous offre calme et sérénité. Cette propriété authentique dispose de tous les équipements modernes pour un séjour confortable et raffiné.',
+        features: ['5 Chambres', 'Wifi', 'Parking', 'Télévision', 'Climatisation', 'Cheminée', 'Rooftop'],
+        images: [
+            'riad%20ziad/Riad-Zaky-14.jpeg',
+            'riad%20ziad/Riad-Zaky-15.jpeg',
+            'riad%20ziad/Riad-Zaky-16.jpeg',
+            'riad%20ziad/Riad-Zaky-17.jpeg',
+            'riad%20ziad/Riad-Zaky-6.jpeg',
+            'riad%20ziad/Riad-Zaky-7.jpeg',
+            'riad%20ziad/Riad-Zaky-8.jpeg',
+            'riad%20ziad/Riad-Zaky-9.jpeg',
+            'riad%20ziad/Riad-Zaky-10.jpeg',
+            'riad%20ziad/Riad-Zaky-11.jpeg'
+        ]
+    },
+    chaden: {
+        name: 'Villa CHADEN - luxe',
+        price: 650,
+        location: 'Route d\'Amizmiz Km7. 15 min du centre ville',
+        description: 'Villa de luxe située sur la route d\'Amizmiz au kilomètre 7, à seulement quinze minutes du centre-ville de Marrakech. Cette propriété d\'exception offre quatre suites spacieuses et une piscine chauffée pour un séjour de prestige dans un cadre raffiné et paisible.',
+        features: ['4 Suites', 'Piscine Chauffée'],
+        images: [
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM%20(1).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM.jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM%20(2).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM%20(3).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM%20(4).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM%20(5).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM%20(6).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM%20(7).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM%20(8).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM%20(9).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM%20(10).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM%20(11).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM%20(12).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM.jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(1).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(2).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(3).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(4).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(5).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(6).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(7).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(8).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(9).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(10).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(11).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(12).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(13).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(14).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(15).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(16).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(17).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(18).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(19).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(20).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(21).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(22).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(23).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(24).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(25).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(26).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(27).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.31%20PM%20(28).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM.jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(1).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(2).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(3).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(4).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(5).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(6).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(7).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(8).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(9).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(10).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(11).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(12).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(13).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(14).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(15).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(16).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(17).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(18).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(19).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(20).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(21).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(22).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(23).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(24).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(25).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.32%20PM%20(26).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.33%20PM.jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.33%20PM%20(1).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.33%20PM%20(2).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.33%20PM%20(3).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.33%20PM%20(4).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.33%20PM%20(5).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.33%20PM%20(6).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.33%20PM%20(7).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.33%20PM%20(8).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.33%20PM%20(9).jpeg',
+            'villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.33%20PM%20(10).jpeg'
+        ]
+    },
+    tania: {
+        name: 'Villa Tania',
+        price: 450,
+        location: 'Route Tahanaoute Km 4',
+        description: 'Charmante villa située sur la route de Tahanaoute au kilomètre 4, offrant un cadre paisible et raffiné. Cette propriété dispose de quatre chambres confortables et d\'une piscine chauffée, idéale pour un séjour reposant à proximité de Marrakech.',
+        features: ['4 Chambres', 'Piscine Chauffée'],
+        images: [
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.46%20PM.jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(1).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(2).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(3).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(4).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(5).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(6).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(7).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(8).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(9).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(10).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(11).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(12).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(13).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(14).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(15).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(16).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(17).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(18).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(19).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(20).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(21).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM%20(22).jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.47%20PM.jpeg',
+            'villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.48%20PM.jpeg'
+        ]
+    },
+    zara: {
+        name: 'Villa Zara',
+        price: 700,
+        location: 'Sur Golf, Marrakech',
+        description: 'Villa de luxe située sur un golf prestigieux à Marrakech. Cette propriété d\'exception dispose de cinq suites de grand luxe, offrant un séjour raffiné dans un cadre exceptionnel. Les tarifs varient selon la période, contactez-nous pour plus d\'informations.',
+        features: ['5 Suites Luxe', 'Sur Golf'],
+        images: [
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM.jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM%20(1).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM%20(2).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM%20(3).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM%20(4).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM%20(5).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM%20(6).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM%20(7).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM%20(8).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM%20(9).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM%20(10).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM%20(11).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM%20(12).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM%20(13).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM.jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(1).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(2).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(3).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(4).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(5).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(6).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(7).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(8).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(9).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(10).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(11).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(12).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(13).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(14).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(15).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(16).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(17).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(18).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(19).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(20).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(21).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(22).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(23).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(24).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(25).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(26).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.06%20PM%20(27).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM.jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(1).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(2).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(3).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(4).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(5).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(6).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(7).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(8).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(9).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(10).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(11).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(12).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(13).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(14).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(15).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(16).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(17).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(18).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(19).jpeg',
+            'villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.07%20PM%20(20).jpeg'
+        ]
+    },
+    warda: {
+        name: 'Villa Warda',
+        price: 690,
+        location: 'Route de Fès Km 7. À 15 min du centre ville',
+        description: 'Villa de luxe située sur la route de Fès au kilomètre 7, à seulement quinze minutes du centre-ville de Marrakech. Cette résidence sécurisée dispose de quatre suites de grand luxe, d\'une piscine chauffée et d\'équipements sportifs incluant un terrain de padel et un terrain de basket, pour un séjour complet et raffiné. Les tarifs varient selon la période, contactez-nous pour plus d\'informations.',
+        features: ['4 Suites Luxe', 'Piscine Chauffée', 'Résidence Sécurisée', 'Terrain de Padel', 'Terrain de Basket'],
+        images: [
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.55%20PM.jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.55%20PM%20(1).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.55%20PM%20(2).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.55%20PM%20(3).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.55%20PM%20(4).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.55%20PM%20(5).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.55%20PM%20(6).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.55%20PM%20(7).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.55%20PM%20(8).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.55%20PM%20(9).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.55%20PM%20(10).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.55%20PM%20(11).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM.jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(1).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(2).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(3).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(4).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(5).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(6).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(7).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(8).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(9).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(10).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(11).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(12).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(13).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(14).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(15).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(16).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(17).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(18).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(19).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(20).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.56%20PM%20(21).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM.jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(1).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(2).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(3).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(4).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(5).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(6).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(7).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(8).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(9).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(10).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(11).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(12).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(13).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(14).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(15).jpeg',
+            'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(16).jpeg'
+        ]
+    },
+    fara: {
+        name: 'Villa Fara',
+        price: 620,
+        location: 'Route Ourika Km 5. 12 min du centre ville',
+        description: 'Charmante villa située sur la route de l\'Ourika au kilomètre 5, à seulement douze minutes du centre-ville de Marrakech. Cette propriété dispose de cinq suites confortables et d\'une piscine chauffée. Notez qu\'un peu de piste est nécessaire pour accéder à la villa, ajoutant au charme de cette retraite paisible.',
+        features: ['5 Suites', 'Piscine Chauffée'],
+        images: [
+            'villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM.jpeg',
+            'villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM%20(1).jpeg',
+            'villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM%20(2).jpeg',
+            'villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM%20(3).jpeg',
+            'villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM%20(4).jpeg',
+            'villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM%20(5).jpeg',
+            'villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM%20(6).jpeg',
+            'villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM%20(7).jpeg',
+            'villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM%20(8).jpeg',
+            'villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM%20(9).jpeg',
+            'villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM%20(10).jpeg',
+            'villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM%20(11).jpeg',
+            'villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM%20(12).jpeg'
+        ]
+    },
+    noam: {
+        name: 'Villa NOAM',
+        price: 730,
+        location: 'Route Ourika Km 9',
+        description: 'Villa spacieuse située sur la route de l\'Ourika au kilomètre 9, offrant un cadre paisible et raffiné. Cette propriété dispose de six suites confortables et d\'une piscine chauffée, idéale pour un séjour en famille ou entre amis dans un environnement serein à proximité de Marrakech.',
+        features: ['6 Suites', 'Piscine Chauffée'],
+        images: [
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.13%20PM.jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.13%20PM%20(1).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.13%20PM%20(2).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.13%20PM%20(3).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.13%20PM%20(4).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.13%20PM%20(5).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.13%20PM%20(6).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM.jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(1).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(2).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(3).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(4).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(5).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(6).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(7).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(8).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(9).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(10).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(11).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(12).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(13).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(14).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(15).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(16).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(17).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(18).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(19).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(20).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(21).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(22).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(23).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.14%20PM%20(24).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.15%20PM.jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.15%20PM%20(1).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.15%20PM%20(2).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.15%20PM%20(3).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.15%20PM%20(4).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.15%20PM%20(5).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.15%20PM%20(6).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.15%20PM%20(7).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.15%20PM%20(8).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.15%20PM%20(9).jpeg',
+            'villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.15%20PM%20(10).jpeg'
+        ]
+    },
+    mila: {
+        name: 'Villa Mila',
+        price: 600,
+        location: 'Route Ouarzazate Km 12. 25 min du centre',
+        description: 'Charmante villa située sur la route de Ouarzazate au kilomètre 12, à vingt-cinq minutes du centre-ville de Marrakech. Cette propriété dispose de quatre suites confortables et d\'une piscine chauffée, offrant un séjour paisible dans un cadre raffiné et tranquille.',
+        features: ['4 Suites', 'Piscine Chauffée'],
+        images: [
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.11%20PM.jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.11%20PM%20(1).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.11%20PM%20(2).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.11%20PM%20(3).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.11%20PM%20(4).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.11%20PM%20(5).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.11%20PM%20(6).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.11%20PM%20(7).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.11%20PM%20(8).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.11%20PM%20(9).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.11%20PM%20(10).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM.jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(1).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(2).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(3).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(4).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(5).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(6).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(7).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(8).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(9).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(10).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(11).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(12).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(13).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(14).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(15).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(16).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(17).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(18).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(19).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(20).jpeg',
+            'villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.12%20PM%20(21).jpeg'
+        ]
+    },
+    complexe: {
+        name: 'Complexe Résidentiel de 6 Villas',
+        price: 400,
+        location: 'Route d\'Amizmiz Km 8',
+        description: 'Complexe résidentiel moderne composé de six villas identiques, toutes disposant de quatre suites. Ces propriétés très modernes offrent une piscine chauffée et un cadre contemporain idéal pour un séjour confortable et raffiné à proximité de Marrakech.',
+        features: ['6 Villas', '4 Suites par Villa', 'Très Modernes', 'Piscine Chauffée'],
+        images: [
+            'complexe.mp4'
         ]
     }
 };
@@ -335,6 +778,16 @@ document.addEventListener('DOMContentLoaded', function() {
     initLanguageSelector();
     // Always apply saved language (fixes translation after reload)
     translatePage();
+    
+    // Lancer la vidéo du complexe automatiquement
+    const complexeVideo = document.getElementById('complexeVideo');
+    if (complexeVideo) {
+        complexeVideo.onloadeddata = function() {
+            complexeVideo.play().catch(function(error) {
+                console.log('Autoplay prevented:', error);
+            });
+        };
+    }
 });
 
 // Header scroll effect
@@ -527,13 +980,13 @@ function setupEventListeners() {
         searchForm.addEventListener('submit', handleSearch);
     }
 
-    // Filter buttons
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    filterButtons.forEach(btn => {
+    // Category filter buttons
+    const categoryFilterButtons = document.querySelectorAll('.category-filter-btn');
+    categoryFilterButtons.forEach(btn => {
         btn.addEventListener('click', function() {
-            filterButtons.forEach(b => b.classList.remove('active'));
+            categoryFilterButtons.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
-            filterVillas(this.dataset.filter);
+            filterByCategory(this.dataset.category);
         });
     });
 
@@ -614,6 +1067,28 @@ function filterVillas(filter) {
         cards.forEach(card => {
             const features = card.dataset.features;
             if (features && features.includes(filter)) {
+                card.style.display = 'block';
+                card.style.animation = 'fadeInUp 0.5s ease';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+}
+
+// Filter villas by category
+function filterByCategory(category) {
+    const cards = document.querySelectorAll('.villa-card');
+    
+    if (category === 'all') {
+        cards.forEach(card => {
+            card.style.display = 'block';
+            card.style.animation = 'fadeInUp 0.5s ease';
+        });
+    } else {
+        cards.forEach(card => {
+            const cardCategory = card.dataset.category;
+            if (cardCategory === category) {
                 card.style.display = 'block';
                 card.style.animation = 'fadeInUp 0.5s ease';
             } else {
@@ -739,14 +1214,46 @@ function openGallery(villaId) {
     container.innerHTML = '';
     currentGalleryImages = villa.images;
     
-    villa.images.forEach((imagePath, index) => {
-        const img = document.createElement('img');
-        img.src = imagePath;
-        img.alt = villa.name;
-        img.onclick = function() {
-            openLightbox(index);
-        };
-        container.appendChild(img);
+    villa.images.forEach((mediaPath, index) => {
+        const isVideo = mediaPath.toLowerCase().endsWith('.mp4') || mediaPath.toLowerCase().endsWith('.webm') || mediaPath.toLowerCase().endsWith('.mov');
+        
+        if (isVideo) {
+            const videoWrapper = document.createElement('div');
+            videoWrapper.style.cssText = 'position: relative; width: 100%; height: 260px; cursor: pointer; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color);';
+            
+            const video = document.createElement('video');
+            video.src = mediaPath;
+            video.style.cssText = 'width: 100%; height: 100%; object-fit: cover;';
+            video.muted = true;
+            video.loop = true;
+            video.playsInline = true;
+            video.autoplay = true;
+            video.onclick = function() {
+                openLightbox(index);
+            };
+            // Lancer la vidéo automatiquement
+            video.onloadeddata = function() {
+                video.play().catch(function(error) {
+                    console.log('Autoplay prevented:', error);
+                });
+            };
+            
+            const playIcon = document.createElement('div');
+            playIcon.style.cssText = 'position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: rgba(0,0,0,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; pointer-events: none;';
+            playIcon.innerHTML = '<svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>';
+            
+            videoWrapper.appendChild(video);
+            videoWrapper.appendChild(playIcon);
+            container.appendChild(videoWrapper);
+        } else {
+            const img = document.createElement('img');
+            img.src = mediaPath;
+            img.alt = villa.name;
+            img.onclick = function() {
+                openLightbox(index);
+            };
+            container.appendChild(img);
+        }
     });
     
     modal.style.display = 'block';
@@ -758,14 +1265,42 @@ function openLightbox(index) {
     currentImageIndex = index;
     const lightbox = document.getElementById('lightboxModal');
     const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxVideo = document.getElementById('lightboxVideo');
     const current = document.getElementById('lightboxCurrent');
     const total = document.getElementById('lightboxTotal');
     
-    if (!lightbox || !lightboxImage) return;
+    if (!lightbox) return;
     
-    lightboxImage.src = currentGalleryImages[index];
-    current.textContent = index + 1;
-    total.textContent = currentGalleryImages.length;
+    const mediaPath = currentGalleryImages[index];
+    const isVideo = mediaPath.toLowerCase().endsWith('.mp4') || mediaPath.toLowerCase().endsWith('.webm') || mediaPath.toLowerCase().endsWith('.mov');
+    
+    if (isVideo) {
+        if (lightboxImage) lightboxImage.style.display = 'none';
+        if (lightboxVideo) {
+            lightboxVideo.style.display = 'block';
+            lightboxVideo.src = mediaPath;
+            lightboxVideo.load();
+            // Lancer la vidéo automatiquement après le chargement
+            lightboxVideo.onloadeddata = function() {
+                lightboxVideo.play().catch(function(error) {
+                    console.log('Autoplay prevented:', error);
+                });
+            };
+        }
+    } else {
+        if (lightboxVideo) {
+            lightboxVideo.style.display = 'none';
+            lightboxVideo.pause();
+            lightboxVideo.src = '';
+        }
+        if (lightboxImage) {
+            lightboxImage.style.display = 'block';
+            lightboxImage.src = mediaPath;
+        }
+    }
+    
+    if (current) current.textContent = index + 1;
+    if (total) total.textContent = currentGalleryImages.length;
     
     lightbox.classList.add('show');
     lightbox.style.display = 'flex';
@@ -775,7 +1310,12 @@ function openLightbox(index) {
 // Close lightbox
 function closeLightbox() {
     const lightbox = document.getElementById('lightboxModal');
+    const lightboxVideo = document.getElementById('lightboxVideo');
     if (lightbox) {
+        if (lightboxVideo) {
+            lightboxVideo.pause();
+            lightboxVideo.src = '';
+        }
         lightbox.classList.remove('show');
         lightbox.style.display = 'none';
         document.body.style.overflow = 'auto';
@@ -793,12 +1333,40 @@ function changeLightboxImage(direction) {
     }
     
     const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxVideo = document.getElementById('lightboxVideo');
     const current = document.getElementById('lightboxCurrent');
     
-    if (lightboxImage && current) {
-        lightboxImage.src = currentGalleryImages[currentImageIndex];
-        current.textContent = currentImageIndex + 1;
+    if (!current) return;
+    
+    const mediaPath = currentGalleryImages[currentImageIndex];
+    const isVideo = mediaPath.toLowerCase().endsWith('.mp4') || mediaPath.toLowerCase().endsWith('.webm') || mediaPath.toLowerCase().endsWith('.mov');
+    
+    if (isVideo) {
+        if (lightboxImage) lightboxImage.style.display = 'none';
+        if (lightboxVideo) {
+            lightboxVideo.style.display = 'block';
+            lightboxVideo.src = mediaPath;
+            lightboxVideo.load();
+            // Lancer la vidéo automatiquement après le chargement
+            lightboxVideo.onloadeddata = function() {
+                lightboxVideo.play().catch(function(error) {
+                    console.log('Autoplay prevented:', error);
+                });
+            };
+        }
+    } else {
+        if (lightboxVideo) {
+            lightboxVideo.style.display = 'none';
+            lightboxVideo.pause();
+            lightboxVideo.src = '';
+        }
+        if (lightboxImage) {
+            lightboxImage.style.display = 'block';
+            lightboxImage.src = mediaPath;
+        }
     }
+    
+    current.textContent = currentImageIndex + 1;
 }
 
 // Close gallery
@@ -1059,15 +1627,34 @@ function openVillaDetail(villaId) {
     // Photo grid
     const photoGrid = document.getElementById('vdPhotoGrid');
     photoGrid.innerHTML = '';
-    villa.images.forEach((img, index) => {
+    villa.images.forEach((mediaPath, index) => {
         const div = document.createElement('div');
         div.className = 'vd-photo-item';
-        const imgEl = document.createElement('img');
-        imgEl.src = img;
-        imgEl.alt = villa.name;
-        imgEl.loading = 'lazy';
-        imgEl.onclick = () => openVdLightbox(index);
-        div.appendChild(imgEl);
+        const isVideo = mediaPath.toLowerCase().endsWith('.mp4') || mediaPath.toLowerCase().endsWith('.webm') || mediaPath.toLowerCase().endsWith('.mov');
+        
+        if (isVideo) {
+            const videoEl = document.createElement('video');
+            videoEl.src = mediaPath;
+            videoEl.muted = true;
+            videoEl.loop = true;
+            videoEl.playsInline = true;
+            videoEl.autoplay = true;
+            videoEl.loading = 'lazy';
+            videoEl.onclick = () => openVdLightbox(index);
+            videoEl.onloadeddata = function() {
+                videoEl.play().catch(function(error) {
+                    console.log('Autoplay prevented:', error);
+                });
+            };
+            div.appendChild(videoEl);
+        } else {
+            const imgEl = document.createElement('img');
+            imgEl.src = mediaPath;
+            imgEl.alt = villa.name;
+            imgEl.loading = 'lazy';
+            imgEl.onclick = () => openVdLightbox(index);
+            div.appendChild(imgEl);
+        }
         photoGrid.appendChild(div);
     });
 
@@ -1098,15 +1685,69 @@ function updateVdHeroImage(animate) {
     const img = document.getElementById('vdHeroImg');
     const current = document.getElementById('vdImgCurrent');
     const total = document.getElementById('vdImgTotal');
+    
+    if (!img || !current || !total) return;
 
-    if (animate) {
-        img.style.opacity = '0';
-        setTimeout(() => {
-            img.src = currentVdImages[currentVdImageIndex];
-            img.style.opacity = '1';
-        }, 220);
+    const mediaPath = currentVdImages[currentVdImageIndex];
+    const isVideo = mediaPath.toLowerCase().endsWith('.mp4') || mediaPath.toLowerCase().endsWith('.webm') || mediaPath.toLowerCase().endsWith('.mov');
+    
+    // Si c'est une vidéo, on doit utiliser un élément vidéo au lieu d'une image
+    if (isVideo) {
+        // Vérifier si un élément vidéo existe déjà, sinon le créer
+        let videoEl = document.getElementById('vdHeroVideo');
+        if (!videoEl) {
+            videoEl = document.createElement('video');
+            videoEl.id = 'vdHeroVideo';
+            videoEl.className = 'vd-hero-img';
+            videoEl.muted = true;
+            videoEl.loop = true;
+            videoEl.playsInline = true;
+            videoEl.autoplay = true;
+            img.parentNode.replaceChild(videoEl, img);
+        }
+        
+        if (animate) {
+            videoEl.style.opacity = '0';
+            setTimeout(() => {
+                videoEl.src = mediaPath;
+                videoEl.load();
+                videoEl.play().catch(function(error) {
+                    console.log('Autoplay prevented:', error);
+                });
+                videoEl.style.opacity = '1';
+            }, 220);
+        } else {
+            videoEl.src = mediaPath;
+            videoEl.load();
+            videoEl.play().catch(function(error) {
+                console.log('Autoplay prevented:', error);
+            });
+        }
     } else {
-        img.src = currentVdImages[currentVdImageIndex];
+        // Si c'est une image, s'assurer qu'on utilise l'élément img
+        let imgEl = document.getElementById('vdHeroImg');
+        if (!imgEl) {
+            const videoEl = document.getElementById('vdHeroVideo');
+            if (videoEl) {
+                imgEl = document.createElement('img');
+                imgEl.id = 'vdHeroImg';
+                imgEl.className = 'vd-hero-img';
+                imgEl.alt = '';
+                videoEl.parentNode.replaceChild(imgEl, videoEl);
+            }
+        }
+        
+        if (imgEl) {
+            if (animate) {
+                imgEl.style.opacity = '0';
+                setTimeout(() => {
+                    imgEl.src = mediaPath;
+                    imgEl.style.opacity = '1';
+                }, 220);
+            } else {
+                imgEl.src = mediaPath;
+            }
+        }
     }
 
     current.textContent = currentVdImageIndex + 1;
@@ -1962,7 +2603,7 @@ function translatePage() {
 
 // Villa descriptions translations
 const villaTranslations = {
-    leila: {
+    amel: {
         fr: 'À seulement 20 minutes du centre-ville de Marrakech, sur la route de Fès, cette somptueuse villa de 5 suites vous accueille dans un écrin de verdure de 4000m².',
         en: 'Just 20 minutes from downtown Marrakech, on the road to Fes, this sumptuous 5-suite villa welcomes you in a 4000m² green setting.',
         es: 'A solo 20 minutos del centro de Marrakech, en la carretera a Fez, esta suntuosa villa de 5 suites le da la bienvenida en un entorno verde de 4000m².',
@@ -2004,13 +2645,6 @@ const villaTranslations = {
         it: 'Raffinata residenza di sei suite incastonata sulla strada per Fez, a quindici minuti dal cuore storico di Marrakech. Con piscina riscaldata e architettura curata, offre un\'atmosfera intima ed elegante per un soggiorno eccezionale, lontano dal trambusto della medina.',
         de: 'Raffinierte Residenz mit sechs Suiten an der Straße nach Fes, fünfzehn Minuten vom historischen Herzen von Marrakesch entfernt. Mit beheiztem Pool und sorgfältiger Architektur bietet sie eine intime und elegante Atmosphäre für einen außergewöhnlichen Aufenthalt, fernab vom Trubel der Medina.'
     },
-    leilagolf: {
-        fr: 'Somptueuse villa de six suites bordant les fairways d\'un golf prestigieux, à quinze minutes du centre de Marrakech. Un espace de vie raffiné alliant piscine chauffée, salle de cinéma privée et hammam traditionnel, pour une expérience de séjour d\'un niveau d\'excellence rare.',
-        en: 'Sumptuous six-suite villa bordering the fairways of a prestigious golf course, fifteen minutes from downtown Marrakech. A refined living space combining heated pool, private cinema room and traditional hammam, for a stay experience of rare excellence.',
-        es: 'Suntuosa villa de seis suites que bordea los fairways de un campo de golf prestigioso, a quince minutos del centro de Marrakech. Un espacio de vida refinado que combina piscina climatizada, sala de cine privada y hammam tradicional, para una experiencia de estancia de excelencia excepcional.',
-        it: 'Sontuosa villa di sei suite che costeggia i fairway di un campo da golf prestigioso, a quindici minuti dal centro di Marrakech. Uno spazio abitativo raffinato che combina piscina riscaldata, sala cinema privata e hammam tradizionale, per un\'esperienza di soggiorno di rara eccellenza.',
-        de: 'Prächtige Villa mit sechs Suiten, die an die Fairways eines prestigeträchtigen Golfplatzes grenzt, fünfzehn Minuten vom Zentrum von Marrakesch entfernt. Ein raffiniertes Wohnambiente mit beheiztem Pool, privatem Kinosaal und traditionellem Hammam für einen Aufenthalt von seltener Exzellenz.'
-    },
     sofia: {
         fr: 'Somptueuse villa de six suites implantée sur la route de Fès, à quinze minutes du centre historique de Marrakech. Ses espaces lumineux, ses finitions haut de gamme et sa piscine chauffée en font l\'adresse idéale pour un séjour de prestige alliant intimité et raffinement.',
         en: 'Sumptuous six-suite villa located on the Fes road, fifteen minutes from the historic center of Marrakech. Its bright spaces, high-end finishes and heated pool make it the ideal address for a prestige stay combining intimacy and refinement.',
@@ -2032,12 +2666,33 @@ const villaTranslations = {
         it: 'Prestigioso dominio composto da tre ville indipendenti che possono essere privatizzate in parte o totalmente. Il dominio dispone di una villa di otto suite, una villa di sei suite e una villa di cinque suite, offrendo uno spazio abitativo eccezionale ideale per grandi gruppi, eventi privati e soggiorni in famiglia. Ogni villa è arredata con raffinatezza per garantire comfort e intimità.',
         de: 'Prestigeträchtiges Anwesen bestehend aus drei unabhängigen Villen, die teilweise oder vollständig privatisiert werden können. Das Anwesen verfügt über eine Villa mit acht Suiten, eine Villa mit sechs Suiten und eine Villa mit fünf Suiten und bietet außergewöhnlichen Wohnraum, ideal für große Gruppen, private Veranstaltungen und Familienaufenthalte. Jede Villa ist elegant eingerichtet, um Komfort und Privatsphäre zu gewährleisten.'
     },
-    ahmed: {
+    rayan: {
         fr: 'Domaine d\'exception situé à vingt-cinq minutes du centre-ville, au cœur du cadre prestigieux de la Palmeraie. S\'étendant sur un parc majestueux de deux hectares, cet écrin de verdure offre un cadre hors du temps, alliant sérénité absolue et prestige, pour des événements d\'exception ou des séjours inoubliables en groupe. Le domaine se compose de trois villas indépendantes totalisant dix-sept suites de grand luxe, chacune disposant de sa propre salle de bains privative. Trois piscines chauffées permettent de profiter de la douceur de Marrakech tout au long de l\'année dans un cadre raffiné et exclusif.',
         en: 'Exceptional estate located twenty-five minutes from downtown, in the heart of the prestigious Palmeraie setting. Extending over a majestic two-hectare park, this green haven offers a timeless setting, combining absolute serenity and prestige, for exceptional events or unforgettable group stays. The estate consists of three independent villas totaling seventeen luxury suites, each with its own private bathroom. Three heated pools allow you to enjoy the mildness of Marrakech year-round in a refined and exclusive setting.',
         es: 'Dominio excepcional situado a veinticinco minutos del centro, en el corazón del prestigioso marco de la Palmeraie. Extendiéndose sobre un parque majestuoso de dos hectáreas, este rincón verde ofrece un marco atemporal, combinando serenidad absoluta y prestigio, para eventos excepcionales o estancias inolvidables en grupo. El dominio se compone de tres villas independientes que totalizan diecisiete suites de gran lujo, cada una con su propio baño privado. Tres piscinas climatizadas permiten disfrutar de la suavidad de Marrakech durante todo el año en un marco refinado y exclusivo.',
         it: 'Dominio eccezionale situato a venticinque minuti dal centro, nel cuore del prestigioso contesto della Palmeraie. Estendendosi su un parco maestoso di due ettari, questo angolo verde offre un ambiente senza tempo, unendo serenità assoluta e prestigio, per eventi eccezionali o soggiorni indimenticabili in gruppo. Il dominio si compone di tre ville indipendenti che totalizzano diciassette suite di grande lusso, ognuna con il proprio bagno privato. Tre piscine riscaldate permettono di godere della dolcezza di Marrakech tutto l\'anno in un ambiente raffinato ed esclusivo.',
         de: 'Außergewöhnliches Anwesen, gelegen fünfundzwanzig Minuten vom Zentrum entfernt, im Herzen des prestigeträchtigen Rahmens der Palmeraie. Erstreckt sich über einen majestätischen zwei Hektar großen Park und bietet eine zeitlose Umgebung, die absolute Ruhe und Prestige vereint, für außergewöhnliche Veranstaltungen oder unvergessliche Gruppenaufenthalte. Das Anwesen besteht aus drei unabhängigen Villen mit insgesamt siebzehn Luxussuiten, jede mit eigenem privaten Badezimmer. Drei beheizte Pools ermöglichen es, die Milde von Marrakesch das ganze Jahr über in einer raffinierten und exklusiven Umgebung zu genießen.'
+    },
+    iman: {
+        fr: 'La Villa Iman est une magnifique propriété située dans la Palmeraie, à seulement 25 minutes du centre-ville, idéale pour un séjour au calme. Cette villa spacieuse dispose de dix chambres et peut accueillir jusqu\'à vingt personnes, sur un terrain de 10 000 m² offrant un cadre exceptionnel pour des séjours en groupe ou des événements privés.',
+        en: 'Villa Iman is a magnificent property located in the Palmeraie, just 25 minutes from downtown, ideal for a peaceful stay. This spacious villa has ten bedrooms and can accommodate up to twenty people, on a 10,000 m² plot offering an exceptional setting for group stays or private events.',
+        es: 'La Villa Iman es una magnífica propiedad ubicada en la Palmeraie, a solo 25 minutos del centro, ideal para una estancia tranquila. Esta villa espaciosa cuenta con diez habitaciones y puede alojar hasta veinte personas, en un terreno de 10 000 m² que ofrece un marco excepcional para estancias en grupo o eventos privados.',
+        it: 'La Villa Iman è una magnifica proprietà situata nella Palmeraie, a soli 25 minuti dal centro, ideale per un soggiorno tranquillo. Questa villa spaziosa dispone di dieci camere e può ospitare fino a venti persone, su un terreno di 10 000 m² che offre un ambiente eccezionale per soggiorni di gruppo o eventi privati.',
+        de: 'Die Villa Iman ist eine prächtige Immobilie in der Palmeraie, nur 25 Minuten vom Zentrum entfernt, ideal für einen ruhigen Aufenthalt. Diese geräumige Villa verfügt über zehn Schlafzimmer und kann bis zu zwanzig Personen beherbergen, auf einem 10.000 m² großen Grundstück, das eine außergewöhnliche Kulisse für Gruppenaufenthalte oder private Veranstaltungen bietet.'
+    },
+    sonia: {
+        fr: 'Cette magnifique villa se trouve à 15 min du centre-ville, au sein du Golf d\'Amelkis. Cette propriété d\'exception dispose de six suites, offrant un séjour de prestige dans un cadre raffiné avec piscine privée et tous les équipements modernes pour votre confort.',
+        en: 'This magnificent villa is located 15 minutes from downtown, within the Amelkis Golf. This exceptional property has six suites, offering a prestige stay in a refined setting with private pool and all modern amenities for your comfort.',
+        es: 'Esta magnífica villa se encuentra a 15 min del centro, dentro del Golf de Amelkis. Esta propiedad excepcional cuenta con seis suites, ofreciendo una estancia de prestigio en un marco refinado con piscina privada y todas las comodidades modernas para su confort.',
+        it: 'Questa magnifica villa si trova a 15 min dal centro, all\'interno del Golf di Amelkis. Questa proprietà eccezionale dispone di sei suite, offrendo un soggiorno di prestigio in un ambiente raffinato con piscina privata e tutti i comfort moderni per il vostro benessere.',
+        de: 'Diese prächtige Villa befindet sich 15 Minuten vom Zentrum entfernt, im Amelkis Golf. Diese außergewöhnliche Immobilie verfügt über sechs Suiten und bietet einen Prestigeaufenthalt in einer raffinierten Umgebung mit privatem Pool und allen modernen Annehmlichkeiten für Ihren Komfort.'
+    },
+    zaky: {
+        fr: 'Riad de 5 chambres, point de départ idéal pour explorer la ville ocre et ses environs. La Palmeraie vous offre calme et sérénité. Cette propriété authentique dispose de tous les équipements modernes pour un séjour confortable et raffiné.',
+        en: '5-bedroom riad, ideal starting point to explore the ochre city and its surroundings. The Palmeraie offers you calm and serenity. This authentic property has all modern amenities for a comfortable and refined stay.',
+        es: 'Riad de 5 habitaciones, punto de partida ideal para explorar la ciudad ocre y sus alrededores. La Palmeraie le ofrece calma y serenidad. Esta propiedad auténtica cuenta con todas las comodidades modernas para una estancia cómoda y refinada.',
+        it: 'Riad di 5 camere, punto di partenza ideale per esplorare la città ocra e i suoi dintorni. La Palmeraie vi offre calma e serenità. Questa proprietà autentica dispone di tutti i comfort moderni per un soggiorno confortevole e raffinato.',
+        de: 'Riad mit 5 Schlafzimmern, idealer Ausgangspunkt, um die ockerfarbene Stadt und ihre Umgebung zu erkunden. Die Palmeraie bietet Ihnen Ruhe und Gelassenheit. Diese authentische Immobilie verfügt über alle modernen Annehmlichkeiten für einen komfortablen und raffinierten Aufenthalt.'
     }
 };
 

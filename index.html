@@ -32,7 +32,7 @@
                         <li><a href="#villas">NOS VILLAS</a></li>
                         <li><a href="apropos.html">À PROPOS</a></li>
                         <li><a href="#contact">CONTACT</a></li>
-                        <li><a href="#magazine">MAGAZINE</a></li>
+                        <li><a href="magazine.html">MAGAZINE</a></li>
                     </ul>
                 </nav>
                 <div class="header-actions">
@@ -121,32 +121,32 @@
                 <p class="section-subtitle">Une sélection raffinée de villas de prestige où l'élégance rencontre l'authenticité marocaine</p>
             </div>
 
-            <!-- Filters -->
-            <div class="filters">
-                <button class="filter-btn active" data-filter="all">Toutes</button>
-                <button class="filter-btn" data-filter="piscine">Piscine</button>
-                <button class="filter-btn" data-filter="hammam">Hammam</button>
-                <button class="filter-btn" data-filter="sport">Salle de Sport</button>
-                <button class="filter-btn" data-filter="wifi">Wifi</button>
+            <!-- Category Filters -->
+            <div class="category-filters">
+                <button class="category-filter-btn active" data-category="all">Toutes</button>
+                <button class="category-filter-btn" data-category="villa">Villas</button>
+                <button class="category-filter-btn" data-category="domaine">Domaines</button>
+                <button class="category-filter-btn" data-category="riad">Riads</button>
+                <button class="category-filter-btn" data-category="complexe">Complexes</button>
             </div>
 
             <!-- Villas Grid -->
             <div class="villas-grid" id="villasGrid">
-                <!-- Villa Leila -->
-                <div class="villa-card" data-villa="leila" data-price="950" data-features="piscine wifi sport hammam">
+                <!-- Villa Amel -->
+                <div class="villa-card" data-villa="amel" data-price="950" data-features="piscine wifi sport hammam" data-category="villa">
                     <div class="villa-image">
-                        <img src="villaleila/Villa-Laila-Villacacher-8.jpeg" alt="Villa Leila">
+                        <img src="villaleila/Villa-Laila-Villacacher-8.jpeg" alt="Villa Amel">
                         <div class="villa-badge">Nouveau</div>
-                        <button class="favorite-btn" onclick="toggleFavorite('leila')" aria-label="Ajouter aux favoris">
+                        <button class="favorite-btn" onclick="toggleFavorite('amel')" aria-label="Ajouter aux favoris">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                             </svg>
                         </button>
                     </div>
                     <div class="villa-content">
-                        <h3>Villa Leila</h3>
+                        <h3>Villa Amel</h3>
                         <p class="villa-location">Marrakech, Marrakesh-Safi, Maroc</p>
-                        <p class="villa-description">Niché à vingt minutes du centre historique, sur la route de Fès, ce domaine exceptionnel de cinq suites s'épanouit dans un jardin luxuriant de quatre mille mètres carrés, offrant une retraite paisible au cœur de la médina.</p>
+                        <p class="villa-description">À seulement 20 minutes du centre-ville de Marrakech, sur la route de Fès, cette somptueuse villa de 5 suites vous accueille dans un écrin de verdure de 4000m².</p>
                         <div class="villa-features">
                             <span class="feature">5 Suites</span>
                             <span class="feature">Wifi</span>
@@ -157,19 +157,19 @@
                             <span class="feature">Salle de Sport</span>
                             <span class="feature">Hammam</span>
                         </div>
-                        <button class="view-gallery-btn" onclick="openGallery('leila')">Voir la galerie</button>
+                        <button class="view-gallery-btn" onclick="openGallery('amel')">Voir la galerie</button>
                         <div class="villa-footer">
                             <div class="villa-price">
                                 <span class="price-label">À partir de :</span>
                                 <span class="price-amount">950.00€<span class="price-unit">/Nuit</span></span>
                             </div>
-                            <button class="reserve-btn" onclick="openReservation('leila')">Réserver</button>
+                            <button class="reserve-btn" onclick="openReservation('amel')">Réserver</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Villa Rania (Zeina) -->
-                <div class="villa-card" data-villa="rania" data-price="1700" data-features="piscine wifi">
+                <div class="villa-card" data-villa="rania" data-price="1700" data-features="piscine wifi" data-category="villa">
                     <div class="villa-image">
                         <img src="villarania/7641e018-467d-4057-b6a8-fc5c57c3dd6a.jpeg" alt="Villa Rania">
                         <button class="favorite-btn" onclick="toggleFavorite('rania')" aria-label="Ajouter aux favoris">
@@ -201,7 +201,7 @@
                 </div>
 
                 <!-- Villa Sarah (Ellia) -->
-                <div class="villa-card" data-villa="sarah" data-price="650" data-features="piscine">
+                <div class="villa-card" data-villa="sarah" data-price="650" data-features="piscine" data-category="villa">
                     <div class="villa-image">
                         <img src="villasarah/0d54978f-eb7d-47b6-96b3-c80b18255f1b.jpeg" alt="Villa Sarah">
                         <button class="favorite-btn" onclick="toggleFavorite('sarah')" aria-label="Ajouter aux favoris">
@@ -230,7 +230,7 @@
                 </div>
 
                 <!-- Villa Jasmine -->
-                <div class="villa-card" data-villa="jasmine" data-price="1300" data-features="piscine">
+                <div class="villa-card" data-villa="jasmine" data-price="1300" data-features="piscine" data-category="villa">
                     <div class="villa-image">
                         <img src="villa%20jasmine/WhatsApp%20Image%202026-02-17%20at%2011.16.29%20AM.jpeg" alt="Villa Jasmine">
                         <button class="favorite-btn" onclick="toggleFavorite('jasmine')" aria-label="Ajouter aux favoris">
@@ -263,7 +263,7 @@
                 </div>
 
                 <!-- Villa Carla -->
-                <div class="villa-card" data-villa="carla" data-price="700" data-features="piscine">
+                <div class="villa-card" data-villa="carla" data-category="villa" data-price="700" data-features="piscine">
                     <div class="villa-image">
                         <img src="villa%20carla/WhatsApp%20Image%202026-02-17%20at%2011.13.53%20AM.jpeg" alt="Villa Carla">
                         <button class="favorite-btn" onclick="toggleFavorite('carla')" aria-label="Ajouter aux favoris">
@@ -295,7 +295,7 @@
                 </div>
 
                 <!-- Villa Shirine -->
-                <div class="villa-card" data-villa="shirine" data-price="680" data-features="piscine wifi">
+                <div class="villa-card" data-villa="shirine" data-category="villa" data-price="680" data-features="piscine wifi">
                     <div class="villa-image">
                         <img src="villa%20shirine/WhatsApp%20Image%202026-02-17%20at%2011.21.59%20AM.jpeg" alt="Villa Shirine">
                         <button class="favorite-btn" onclick="toggleFavorite('shirine')" aria-label="Ajouter aux favoris">
@@ -326,42 +326,10 @@
                     </div>
                 </div>
 
-                <!-- Villa Leila Golf -->
-                <div class="villa-card" data-villa="leilagolf" data-price="750" data-features="piscine hammam">
-                    <div class="villa-image">
-                        <img src="villaleila/Villa-Laila-Villacacher-8.jpeg" alt="Villa Leila Golf">
-                        <button class="favorite-btn" onclick="toggleFavorite('leilagolf')" aria-label="Ajouter aux favoris">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="villa-content">
-                        <h3>Villa Leila</h3>
-                        <p class="villa-location">Sur Golf, Marrakech — 15 min du centre</p>
-                        <p class="villa-description">Somptueuse villa de six suites bordant les fairways d'un golf prestigieux, à quinze minutes du centre de Marrakech. Un espace de vie raffiné alliant piscine chauffée, salle de cinéma privée et hammam traditionnel, pour une expérience de séjour d'un niveau d'excellence rare.</p>
-                        <div class="villa-features">
-                            <span class="feature">6 Suites</span>
-                            <span class="feature">Sur Golf</span>
-                            <span class="feature">Piscine Chauffée</span>
-                            <span class="feature">Salle de Cinéma</span>
-                            <span class="feature">Hammam</span>
-                        </div>
-                        <button class="view-gallery-btn" onclick="openGallery('leilagolf')">Voir la galerie</button>
-                        <div class="villa-footer">
-                            <div class="villa-price">
-                                <span class="price-label">À partir de :</span>
-                                <span class="price-amount">750.00€<span class="price-unit">/Nuit</span></span>
-                            </div>
-                            <button class="reserve-btn" onclick="openReservation('leilagolf')">Réserver</button>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Villa Sofia -->
-                <div class="villa-card" data-villa="sofia" data-price="800" data-features="piscine wifi">
+                <div class="villa-card" data-villa="sofia" data-category="villa" data-price="800" data-features="piscine wifi">
                     <div class="villa-image">
-                        <img src="villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM.jpeg" alt="Villa Sofia">
+                        <img src="villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(1).jpeg" alt="Villa Sofia">
                         <button class="favorite-btn" onclick="toggleFavorite('sofia')" aria-label="Ajouter aux favoris">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
@@ -391,7 +359,7 @@
                 </div>
 
                 <!-- Villa Janna -->
-                <div class="villa-card" data-villa="janna" data-price="650" data-features="piscine">
+                <div class="villa-card" data-villa="janna" data-category="villa" data-price="650" data-features="piscine">
                     <div class="villa-image">
                         <img src="villa%20janna/WhatsApp%20Image%202026-02-17%20at%2011.29.22%20AM.jpeg" alt="Villa Janna">
                         <button class="favorite-btn" onclick="toggleFavorite('janna')" aria-label="Ajouter aux favoris">
@@ -423,7 +391,7 @@
                 </div>
 
                 <!-- Domaine Youness -->
-                <div class="villa-card" data-villa="youness" data-price="2800" data-features="piscine wifi">
+                <div class="villa-card" data-villa="youness" data-price="2800" data-features="piscine wifi" data-category="domaine">
                     <div class="villa-image">
                         <img src="domaine%20youness/WhatsApp%20Image%202026-02-17%20at%2011.26.59%20AM.jpeg" alt="Domaine Youness">
                         <button class="favorite-btn" onclick="toggleFavorite('youness')" aria-label="Ajouter aux favoris">
@@ -459,18 +427,18 @@
                     </div>
                 </div>
 
-                <!-- Domaine Ahmed -->
-                <div class="villa-card" data-villa="ahmed" data-price="2800" data-features="piscine wifi">
+                <!-- Domaine Rayan -->
+                <div class="villa-card" data-villa="rayan" data-price="2800" data-features="piscine wifi" data-category="domaine">
                     <div class="villa-image">
-                        <img src="domaine%20ahmed/domaine-noam-17-chambre_-16.jpeg" alt="Domaine Ahmed">
-                        <button class="favorite-btn" onclick="toggleFavorite('ahmed')" aria-label="Ajouter aux favoris">
+                        <img src="domaine%20ahmed/domaine-noam-17-chambre_-16.jpeg" alt="Domaine Rayan">
+                        <button class="favorite-btn" onclick="toggleFavorite('rayan')" aria-label="Ajouter aux favoris">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                             </svg>
                         </button>
                     </div>
                     <div class="villa-content">
-                        <h3>Domaine Ahmed</h3>
+                        <h3>Domaine Rayan</h3>
                         <p class="villa-location">Palmeraie, Marrakech — 25 min du centre</p>
                         <p class="villa-description">Domaine d'exception situé à vingt-cinq minutes du centre-ville, au cœur du cadre prestigieux de la Palmeraie. S'étendant sur un parc majestueux de deux hectares, cet écrin de verdure offre un cadre hors du temps, alliant sérénité absolue et prestige, pour des événements d'exception ou des séjours inoubliables en groupe. Le domaine se compose de trois villas indépendantes totalisant dix-sept suites de grand luxe, chacune disposant de sa propre salle de bains privative. Trois piscines chauffées permettent de profiter de la douceur de Marrakech tout au long de l'année dans un cadre raffiné et exclusif.</p>
                         <div class="villa-features">
@@ -487,13 +455,349 @@
                             <span class="feature">Télévision</span>
                             <span class="feature">Climatisation</span>
                         </div>
-                        <button class="view-gallery-btn" onclick="openGallery('ahmed')">Voir la galerie</button>
+                        <button class="view-gallery-btn" onclick="openGallery('rayan')">Voir la galerie</button>
                         <div class="villa-footer">
                             <div class="villa-price">
                                 <span class="price-label">À partir de :</span>
                                 <span class="price-amount">2800.00€<span class="price-unit">/Nuit</span></span>
                             </div>
-                            <button class="reserve-btn" onclick="openReservation('ahmed')">Réserver</button>
+                            <button class="reserve-btn" onclick="openReservation('rayan')">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Villa Iman -->
+                <div class="villa-card" data-villa="iman" data-category="villa" data-price="1600" data-features="">
+                    <div class="villa-image">
+                        <img src="villa%20iman/Riad-Zaky-14.jpeg" alt="Villa Iman">
+                        <button class="favorite-btn" onclick="toggleFavorite('iman')" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="villa-content">
+                        <h3>Villa Iman</h3>
+                        <p class="villa-location">Marrakech, la Palmeraie — 25 min du centre</p>
+                        <p class="villa-description">La Villa Iman est une magnifique propriété située dans la Palmeraie, à seulement 25 minutes du centre-ville, idéale pour un séjour au calme. Cette villa spacieuse dispose de dix chambres et peut accueillir jusqu'à vingt personnes, sur un terrain de 10 000 m² offrant un cadre exceptionnel pour des séjours en groupe ou des événements privés.</p>
+                        <div class="villa-features">
+                            <span class="feature">10 Chambres</span>
+                            <span class="feature">20 Personnes</span>
+                            <span class="feature">Terrain de 10 000 m²</span>
+                        </div>
+                        <button class="view-gallery-btn" onclick="openGallery('iman')">Voir la galerie</button>
+                        <div class="villa-footer">
+                            <div class="villa-price">
+                                <span class="price-label">À partir de :</span>
+                                <span class="price-amount">1600.00€<span class="price-unit">/Nuit</span></span>
+                            </div>
+                            <button class="reserve-btn" onclick="openReservation('iman')">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Villa Sonia -->
+                <div class="villa-card" data-villa="sonia" data-category="villa" data-price="800" data-features="piscine wifi">
+                    <div class="villa-image">
+                        <img src="villa%20lina/Sonia_001-1.jpg.jpeg" alt="Villa Sonia">
+                        <button class="favorite-btn" onclick="toggleFavorite('sonia')" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="villa-content">
+                        <h3>Villa Sonia</h3>
+                        <p class="villa-location">Marrakech, Marrakesh-Safi, Maroc — 15 min du centre-ville, Golf d'Amelkis</p>
+                        <p class="villa-description">Cette magnifique villa se trouve à 15 min du centre-ville, au sein du Golf d'Amelkis. Cette propriété d'exception dispose de six suites, offrant un séjour de prestige dans un cadre raffiné avec piscine privée et tous les équipements modernes pour votre confort.</p>
+                        <div class="villa-features">
+                            <span class="feature">6 Suites</span>
+                            <span class="feature">Wifi</span>
+                            <span class="feature">Parking</span>
+                            <span class="feature">Piscine Privée</span>
+                            <span class="feature">Télévision</span>
+                            <span class="feature">Climatisation</span>
+                        </div>
+                        <button class="view-gallery-btn" onclick="openGallery('sonia')">Voir la galerie</button>
+                        <div class="villa-footer">
+                            <div class="villa-price">
+                                <span class="price-label">À partir de :</span>
+                                <span class="price-amount">800.00€<span class="price-unit">/Nuit</span></span>
+                            </div>
+                            <button class="reserve-btn" onclick="openReservation('sonia')">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Riad Zaky -->
+                <div class="villa-card" data-villa="zaky" data-price="650" data-features="wifi" data-category="riad">
+                    <div class="villa-image">
+                        <img src="riad%20ziad/Riad-Zaky-14.jpeg" alt="Riad Zaky">
+                        <button class="favorite-btn" onclick="toggleFavorite('zaky')" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="villa-content">
+                        <h3>Riad Zaky</h3>
+                        <p class="villa-location">Marrakech, Marrakesh-Safi, Maroc — La Palmeraie</p>
+                        <p class="villa-description">Riad de 5 chambres, point de départ idéal pour explorer la ville ocre et ses environs. La Palmeraie vous offre calme et sérénité. Cette propriété authentique dispose de tous les équipements modernes pour un séjour confortable et raffiné.</p>
+                        <div class="villa-features">
+                            <span class="feature">5 Chambres</span>
+                            <span class="feature">Wifi</span>
+                            <span class="feature">Parking</span>
+                            <span class="feature">Télévision</span>
+                            <span class="feature">Climatisation</span>
+                            <span class="feature">Cheminée</span>
+                            <span class="feature">Rooftop</span>
+                        </div>
+                        <button class="view-gallery-btn" onclick="openGallery('zaky')">Voir la galerie</button>
+                        <div class="villa-footer">
+                            <div class="villa-price">
+                                <span class="price-label">À partir de :</span>
+                                <span class="price-amount">650.00€<span class="price-unit">/Nuit</span></span>
+                            </div>
+                            <button class="reserve-btn" onclick="openReservation('zaky')">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Villa CHADEN -->
+                <div class="villa-card" data-villa="chaden" data-category="villa" data-price="650" data-features="piscine">
+                    <div class="villa-image">
+                        <img src="villa%20chaden/WhatsApp%20Image%202026-02-18%20at%208.04.30%20PM%20(1).jpeg" alt="Villa CHADEN">
+                        <button class="favorite-btn" onclick="toggleFavorite('chaden')" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="villa-content">
+                        <h3>Villa CHADEN - luxe</h3>
+                        <p class="villa-location">Route d'Amizmiz Km7. 15 min du centre ville</p>
+                        <p class="villa-description">Villa de luxe située sur la route d'Amizmiz au kilomètre 7, à seulement quinze minutes du centre-ville de Marrakech. Cette propriété d'exception offre quatre suites spacieuses et une piscine chauffée pour un séjour de prestige dans un cadre raffiné et paisible.</p>
+                        <div class="villa-features">
+                            <span class="feature">4 Suites</span>
+                            <span class="feature">Piscine Chauffée</span>
+                        </div>
+                        <button class="view-gallery-btn" onclick="openGallery('chaden')">Voir la galerie</button>
+                        <div class="villa-footer">
+                            <div class="villa-price">
+                                <span class="price-label">À partir de :</span>
+                                <span class="price-amount">650.00€<span class="price-unit">/Nuit</span></span>
+                            </div>
+                            <button class="reserve-btn" onclick="openReservation('chaden')">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Villa Tania -->
+                <div class="villa-card" data-villa="tania" data-category="villa" data-price="450" data-features="piscine">
+                    <div class="villa-image">
+                        <img src="villa%20tania/WhatsApp%20Image%202026-02-18%20at%208.03.46%20PM.jpeg" alt="Villa Tania">
+                        <button class="favorite-btn" onclick="toggleFavorite('tania')" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="villa-content">
+                        <h3>Villa Tania</h3>
+                        <p class="villa-location">Route Tahanaoute Km 4</p>
+                        <p class="villa-description">Charmante villa située sur la route de Tahanaoute au kilomètre 4, offrant un cadre paisible et raffiné. Cette propriété dispose de quatre chambres confortables et d'une piscine chauffée, idéale pour un séjour reposant à proximité de Marrakech.</p>
+                        <div class="villa-features">
+                            <span class="feature">4 Chambres</span>
+                            <span class="feature">Piscine Chauffée</span>
+                        </div>
+                        <button class="view-gallery-btn" onclick="openGallery('tania')">Voir la galerie</button>
+                        <div class="villa-footer">
+                            <div class="villa-price">
+                                <span class="price-label">À partir de :</span>
+                                <span class="price-amount">450.00€<span class="price-unit">/Nuit</span></span>
+                            </div>
+                            <button class="reserve-btn" onclick="openReservation('tania')">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Villa Zara -->
+                <div class="villa-card" data-villa="zara" data-category="villa" data-price="700" data-features="">
+                    <div class="villa-image">
+                        <img src="villa%20zara/WhatsApp%20Image%202026-02-18%20at%207.55.05%20PM.jpeg" alt="Villa Zara">
+                        <button class="favorite-btn" onclick="toggleFavorite('zara')" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="villa-content">
+                        <h3>Villa Zara</h3>
+                        <p class="villa-location">Sur Golf, Marrakech</p>
+                        <p class="villa-description">Villa de luxe située sur un golf prestigieux à Marrakech. Cette propriété d'exception dispose de cinq suites de grand luxe, offrant un séjour raffiné dans un cadre exceptionnel. Les tarifs varient selon la période, contactez-nous pour plus d'informations.</p>
+                        <div class="villa-features">
+                            <span class="feature">5 Suites Luxe</span>
+                            <span class="feature">Sur Golf</span>
+                        </div>
+                        <button class="view-gallery-btn" onclick="openGallery('zara')">Voir la galerie</button>
+                        <div class="villa-footer">
+                            <div class="villa-price">
+                                <span class="price-label">À partir de :</span>
+                                <span class="price-amount">700.00€<span class="price-unit">/Nuit</span></span>
+                            </div>
+                            <button class="reserve-btn" onclick="openReservation('zara')">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Villa Warda -->
+                <div class="villa-card" data-villa="warda" data-category="villa" data-price="690" data-features="piscine">
+                    <div class="villa-image">
+                        <img src="villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.55%20PM.jpeg" alt="Villa Warda">
+                        <button class="favorite-btn" onclick="toggleFavorite('warda')" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="villa-content">
+                        <h3>Villa Warda</h3>
+                        <p class="villa-location">Route de Fès Km 7. À 15 min du centre ville</p>
+                        <p class="villa-description">Villa de luxe située sur la route de Fès au kilomètre 7, à seulement quinze minutes du centre-ville de Marrakech. Cette résidence sécurisée dispose de quatre suites de grand luxe, d'une piscine chauffée et d'équipements sportifs incluant un terrain de padel et un terrain de basket, pour un séjour complet et raffiné.</p>
+                        <div class="villa-features">
+                            <span class="feature">4 Suites Luxe</span>
+                            <span class="feature">Piscine Chauffée</span>
+                            <span class="feature">Résidence Sécurisée</span>
+                            <span class="feature">Terrain de Padel</span>
+                            <span class="feature">Terrain de Basket</span>
+                        </div>
+                        <button class="view-gallery-btn" onclick="openGallery('warda')">Voir la galerie</button>
+                        <div class="villa-footer">
+                            <div class="villa-price">
+                                <span class="price-label">À partir de :</span>
+                                <span class="price-amount">690.00€<span class="price-unit">/Nuit</span></span>
+                            </div>
+                            <button class="reserve-btn" onclick="openReservation('warda')">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Villa Fara -->
+                <div class="villa-card" data-villa="fara" data-category="villa" data-price="620" data-features="piscine">
+                    <div class="villa-image">
+                        <img src="villa%20fara/WhatsApp%20Image%202026-02-18%20at%207.58.29%20PM.jpeg" alt="Villa Fara">
+                        <button class="favorite-btn" onclick="toggleFavorite('fara')" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="villa-content">
+                        <h3>Villa Fara</h3>
+                        <p class="villa-location">Route Ourika Km 5. 12 min du centre ville</p>
+                        <p class="villa-description">Charmante villa située sur la route de l'Ourika au kilomètre 5, à seulement douze minutes du centre-ville de Marrakech. Cette propriété dispose de cinq suites confortables et d'une piscine chauffée. Notez qu'un peu de piste est nécessaire pour accéder à la villa, ajoutant au charme de cette retraite paisible.</p>
+                        <div class="villa-features">
+                            <span class="feature">5 Suites</span>
+                            <span class="feature">Piscine Chauffée</span>
+                        </div>
+                        <button class="view-gallery-btn" onclick="openGallery('fara')">Voir la galerie</button>
+                        <div class="villa-footer">
+                            <div class="villa-price">
+                                <span class="price-label">À partir de :</span>
+                                <span class="price-amount">620.00€<span class="price-unit">/Nuit</span></span>
+                            </div>
+                            <button class="reserve-btn" onclick="openReservation('fara')">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Villa NOAM -->
+                <div class="villa-card" data-villa="noam" data-category="villa" data-price="730" data-features="piscine">
+                    <div class="villa-image">
+                        <img src="villa%20noam/WhatsApp%20Image%202026-02-18%20at%208.02.13%20PM.jpeg" alt="Villa NOAM">
+                        <button class="favorite-btn" onclick="toggleFavorite('noam')" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="villa-content">
+                        <h3>Villa NOAM</h3>
+                        <p class="villa-location">Route Ourika Km 9</p>
+                        <p class="villa-description">Villa spacieuse située sur la route de l'Ourika au kilomètre 9, offrant un cadre paisible et raffiné. Cette propriété dispose de six suites confortables et d'une piscine chauffée, idéale pour un séjour en famille ou entre amis dans un environnement serein à proximité de Marrakech.</p>
+                        <div class="villa-features">
+                            <span class="feature">6 Suites</span>
+                            <span class="feature">Piscine Chauffée</span>
+                        </div>
+                        <button class="view-gallery-btn" onclick="openGallery('noam')">Voir la galerie</button>
+                        <div class="villa-footer">
+                            <div class="villa-price">
+                                <span class="price-label">À partir de :</span>
+                                <span class="price-amount">730.00€<span class="price-unit">/Nuit</span></span>
+                            </div>
+                            <button class="reserve-btn" onclick="openReservation('noam')">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Villa Mila -->
+                <div class="villa-card" data-villa="mila" data-category="villa" data-price="600" data-features="piscine">
+                    <div class="villa-image">
+                        <img src="villa%20mila/WhatsApp%20Image%202026-02-18%20at%208.03.11%20PM.jpeg" alt="Villa Mila">
+                        <button class="favorite-btn" onclick="toggleFavorite('mila')" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="villa-content">
+                        <h3>Villa Mila</h3>
+                        <p class="villa-location">Route Ouarzazate Km 12. 25 min du centre</p>
+                        <p class="villa-description">Charmante villa située sur la route de Ouarzazate au kilomètre 12, à vingt-cinq minutes du centre-ville de Marrakech. Cette propriété dispose de quatre suites confortables et d'une piscine chauffée, offrant un séjour paisible dans un cadre raffiné et tranquille.</p>
+                        <div class="villa-features">
+                            <span class="feature">4 Suites</span>
+                            <span class="feature">Piscine Chauffée</span>
+                        </div>
+                        <button class="view-gallery-btn" onclick="openGallery('mila')">Voir la galerie</button>
+                        <div class="villa-footer">
+                            <div class="villa-price">
+                                <span class="price-label">À partir de :</span>
+                                <span class="price-amount">600.00€<span class="price-unit">/Nuit</span></span>
+                            </div>
+                            <button class="reserve-btn" onclick="openReservation('mila')">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Complexe Résidentiel -->
+                <div class="villa-card" data-villa="complexe" data-price="400" data-features="piscine" data-category="complexe">
+                    <div class="villa-image">
+                        <video id="complexeVideo" muted loop playsinline autoplay>
+                            <source src="complexe.mp4" type="video/mp4">
+                        </video>
+                        <button class="favorite-btn" onclick="toggleFavorite('complexe')" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="villa-content">
+                        <h3>Complexe Résidentiel de 6 Villas</h3>
+                        <p class="villa-location">Route d'Amizmiz Km 8</p>
+                        <p class="villa-description">Complexe résidentiel moderne composé de six villas identiques, toutes disposant de quatre suites. Ces propriétés très modernes offrent une piscine chauffée et un cadre contemporain idéal pour un séjour confortable et raffiné à proximité de Marrakech.</p>
+                        <div class="villa-features">
+                            <span class="feature">6 Villas</span>
+                            <span class="feature">4 Suites par Villa</span>
+                            <span class="feature">Très Modernes</span>
+                            <span class="feature">Piscine Chauffée</span>
+                        </div>
+                        <button class="view-gallery-btn" onclick="openGallery('complexe')">Voir la vidéo</button>
+                        <div class="villa-footer">
+                            <div class="villa-price">
+                                <span class="price-label">À partir de :</span>
+                                <span class="price-amount">400.00€<span class="price-unit">/Nuit</span></span>
+                            </div>
+                            <button class="reserve-btn" onclick="openReservation('complexe')">Réserver</button>
                         </div>
                     </div>
                 </div>
@@ -517,7 +821,8 @@
         <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
         <button class="lightbox-prev" onclick="changeLightboxImage(-1)">‹</button>
         <button class="lightbox-next" onclick="changeLightboxImage(1)">›</button>
-        <img id="lightboxImage" src="" alt="">
+        <img id="lightboxImage" src="" alt="" style="display: none;">
+        <video id="lightboxVideo" controls style="display: none; max-width: 90vw; max-height: 90vh; border-radius: 8px;"></video>
         <div class="lightbox-counter">
             <span id="lightboxCurrent">1</span> / <span id="lightboxTotal">1</span>
         </div>

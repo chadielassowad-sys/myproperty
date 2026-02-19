@@ -547,6 +547,38 @@ body {
     box-shadow: 0 4px 12px rgba(201, 169, 97, 0.25);
 }
 
+/* Category Filters */
+.category-filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.category-filter-btn {
+    padding: 12px 28px;
+    background: var(--bg-white);
+    border: 1.5px solid var(--border-color);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: var(--transition);
+    color: var(--text-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.category-filter-btn:hover,
+.category-filter-btn.active {
+    background: var(--primary-color);
+    color: var(--bg-white);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 20, 60, 0.25);
+}
+
 /* Villas Grid */
 .villas-grid {
     display: grid;
@@ -577,14 +609,16 @@ body {
     background: var(--bg-light);
 }
 
-.villa-image img {
+.villa-image img,
+.villa-image video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: var(--transition);
 }
 
-.villa-card:hover .villa-image img {
+.villa-card:hover .villa-image img,
+.villa-card:hover .villa-image video {
     transform: scale(1.08);
 }
 
@@ -1023,6 +1057,229 @@ body {
 }
 
 /* Contact Section */
+/* Magazine Section */
+.magazine-section {
+    padding: 120px 0;
+    background: var(--bg-white);
+}
+
+.magazine-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.magazine-header h2 {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 3.5rem;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.magazine-header p {
+    font-size: 1.25rem;
+    color: var(--text-medium);
+    line-height: 1.8;
+}
+
+.magazine-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.magazine-article {
+    background: var(--bg-white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px var(--shadow);
+    transition: var(--transition);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.magazine-article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px var(--shadow-lg);
+}
+
+.magazine-article.featured {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.magazine-article .article-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+
+.magazine-article.featured .article-image {
+    height: 400px;
+}
+
+.magazine-article .article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.magazine-article:hover .article-image img {
+    transform: scale(1.1);
+}
+
+.magazine-article .article-content {
+    padding: 32px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.magazine-article .article-category {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.magazine-article .article-content h3 {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.magazine-article.featured .article-content h3 {
+    font-size: 2rem;
+}
+
+.magazine-article .article-excerpt {
+    font-size: 1rem;
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+.magazine-article.featured .article-excerpt {
+    font-size: 1.125rem;
+}
+
+.magazine-article .article-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.magazine-article .article-date,
+.magazine-article .article-read-time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.magazine-article .article-date::before {
+    content: '';
+    font-size: 0.875rem;
+}
+
+.magazine-article .article-read-time::before {
+    content: '';
+    font-size: 0.875rem;
+}
+
+/* Responsive Magazine */
+@media (max-width: 1024px) {
+    .magazine-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .magazine-article.featured {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .magazine-section {
+        padding: 80px 0;
+    }
+    
+    .magazine-header {
+        margin-bottom: 50px;
+    }
+    
+    .magazine-header h2 {
+        font-size: 2.5rem;
+    }
+    
+    .magazine-header p {
+        font-size: 1rem;
+    }
+    
+    .magazine-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .magazine-article.featured {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .magazine-article .article-image {
+        height: 240px;
+    }
+    
+    .magazine-article.featured .article-image {
+        height: 240px;
+    }
+    
+    .magazine-article .article-content {
+        padding: 24px;
+    }
+    
+    .magazine-article .article-content h3 {
+        font-size: 1.25rem;
+    }
+    
+    .magazine-article.featured .article-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .magazine-section {
+        padding: 60px 0;
+    }
+    
+    .magazine-header h2 {
+        font-size: 2rem;
+    }
+    
+    .magazine-article .article-content {
+        padding: 20px;
+    }
+    
+    .magazine-article .article-meta {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
 .contact-section {
     padding: 120px 0;
     background: var(--bg-white);
@@ -1625,6 +1882,16 @@ body {
         font-size: 12px;
     }
 
+    .category-filters {
+        gap: 8px;
+        margin-bottom: 30px;
+    }
+
+    .category-filter-btn {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+
     .villas-grid {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -1679,6 +1946,26 @@ body {
 
     .about-feature {
         padding: 30px 20px;
+    }
+
+    .magazine-section {
+        padding: 60px 0;
+    }
+    
+    .magazine-header {
+        margin-bottom: 40px;
+    }
+    
+    .magazine-header h2 {
+        font-size: 2rem;
+    }
+    
+    .magazine-header p {
+        font-size: 1rem;
+    }
+    
+    .magazine-grid {
+        gap: 24px;
     }
 
     .contact-section {
@@ -1874,6 +2161,22 @@ body {
 
     .price-amount {
         font-size: 1.4rem;
+    }
+
+    .magazine-section {
+        padding: 40px 0;
+    }
+    
+    .magazine-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .magazine-header p {
+        font-size: 0.9rem;
+    }
+    
+    .magazine-grid {
+        gap: 20px;
     }
 
     .about-section,
@@ -2393,7 +2696,8 @@ body {
     aspect-ratio: unset;
 }
 
-.vd-photo-item img {
+.vd-photo-item img,
+.vd-photo-item video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2401,7 +2705,8 @@ body {
     display: block;
 }
 
-.vd-photo-item:hover img {
+.vd-photo-item:hover img,
+.vd-photo-item:hover video {
     transform: scale(1.06);
 }
 
