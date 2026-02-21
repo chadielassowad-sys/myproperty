@@ -262,9 +262,9 @@ const villasData = {
         description: 'Prestigieux domaine composé de trois villas indépendantes pouvant être privatisées en partie ou en totalité. Le domaine dispose d\'une villa de huit suites, d\'une villa de six suites et d\'une villa de cinq suites, offrant un espace de vie exceptionnel idéal pour les grands groupes, les événements privés et les séjours en famille. Chaque villa est aménagée avec raffinement pour garantir confort et intimité.',
         features: ['3 Villas Indépendantes', '19 Suites au Total', 'Privatisable en Partie ou Totalité', 'Villa 8 Suites', 'Villa 6 Suites', 'Villa 5 Suites', 'Piscine', 'Jardin', 'Wifi', 'Parking', 'Climatisation'],
         images: [
+            'domaine%20youness/WhatsApp%20Image%202026-02-17%20at%2011.26.59%20AM%20(2).jpeg',
             'domaine%20youness/WhatsApp%20Image%202026-02-17%20at%2011.26.59%20AM.jpeg',
             'domaine%20youness/WhatsApp%20Image%202026-02-17%20at%2011.26.59%20AM%20(1).jpeg',
-            'domaine%20youness/WhatsApp%20Image%202026-02-17%20at%2011.26.59%20AM%20(2).jpeg',
             'domaine%20youness/WhatsApp%20Image%202026-02-17%20at%2011.26.59%20AM%20(3).jpeg',
             'domaine%20youness/WhatsApp%20Image%202026-02-17%20at%2011.26.59%20AM%20(4).jpeg',
             'domaine%20youness/WhatsApp%20Image%202026-02-17%20at%2011.26.59%20AM%20(5).jpeg',
@@ -279,10 +279,10 @@ const villasData = {
         description: 'Domaine d\'exception situé à vingt-cinq minutes du centre-ville, au cœur du cadre prestigieux de la Palmeraie. S\'étendant sur un parc majestueux de deux hectares, cet écrin de verdure offre un cadre hors du temps, alliant sérénité absolue et prestige, pour des événements d\'exception ou des séjours inoubliables en groupe. Le domaine se compose de trois villas indépendantes totalisant dix-sept suites de grand luxe, chacune disposant de sa propre salle de bains privative. Trois piscines chauffées permettent de profiter de la douceur de Marrakech tout au long de l\'année dans un cadre raffiné et exclusif.',
         features: ['3 Villas Indépendantes', '17 Suites au Total', 'Villa 1: 6 Chambres', 'Villa 2: 6 Chambres', 'Villa 3: 5 Chambres', '3 Piscines Privées Chauffées', 'Parc de 2 Hectares', 'Salles de Bains Individuelles', 'Wifi', 'Parking', 'Télévision', 'Climatisation'],
         images: [
+            'domaine%20ahmed/domaine-noam-17-chambre_-27.jpeg',
             'domaine%20ahmed/domaine-noam-17-chambre_-16.jpeg',
             'domaine%20ahmed/domaine-noam-17-chambre_-21.jpeg',
             'domaine%20ahmed/domaine-noam-17-chambre_-22-1024x768.jpeg',
-            'domaine%20ahmed/domaine-noam-17-chambre_-27.jpeg',
             'domaine%20ahmed/domaine-noam-17-chambre_-3.jpeg',
             'domaine%20ahmed/domaine-noam-17-chambre_-31.jpeg',
             'domaine%20ahmed/domaine-noam-17-chambre_-32.jpeg',
@@ -292,43 +292,6 @@ const villasData = {
             'domaine%20ahmed/domaine-noam-17-chambre_-50.jpeg',
             'domaine%20ahmed/domaine-noam-17-chambre_-53.jpeg',
             'domaine%20ahmed/domaine-noam-17-chambre_-54.jpeg'
-        ]
-    },
-    iman: {
-        name: 'Villa Iman',
-        price: 1600,
-        location: 'Marrakech, la Palmeraie — 25 min du centre',
-        description: 'La Villa Iman est une magnifique propriété située dans la Palmeraie, à seulement 25 minutes du centre-ville, idéale pour un séjour au calme. Cette villa spacieuse dispose de dix chambres et peut accueillir jusqu\'à vingt personnes, sur un terrain de 10 000 m² offrant un cadre exceptionnel pour des séjours en groupe ou des événements privés.',
-        features: ['10 Chambres', '20 Personnes', 'Terrain de 10 000 m²'],
-        images: [
-            'villa%20iman/Riad-Zaky-14.jpeg',
-            'villa%20iman/5f4dd025-3aaf-4ad0-97db-e69957a14ac3.jpeg',
-            'villa%20iman/4cf08c93-0540-4a98-918e-f4760d2ff462.jpeg',
-            'villa%20iman/4af24a93-5a87-483d-9f99-70e61d160a8a.jpeg',
-            'villa%20iman/1ed697b9-92a6-4c76-95eb-b4a18979ccf4.jpeg',
-            'villa%20iman/02a60b9e-21a3-4e11-a771-8cc79300f3cd.jpeg',
-            'villa%20iman/fd2682ec-e755-4da8-a8e3-86a45c74fe3e.jpeg',
-            'villa%20iman/f90fcd38-ba54-47b1-9e54-cbc6f37dfbd9.jpeg',
-            'villa%20iman/e677108d-0f21-44a6-9de2-dd357342ae45.jpeg',
-            'villa%20iman/e9b43791-7cfc-4428-85bf-db333d0c20b1.jpeg',
-            'villa%20iman/e09cee96-dc77-4720-b47b-29109ddf2d8d.jpeg',
-            'villa%20iman/dcc06929-56b8-4824-ab95-b22fd1705667.jpeg',
-            'villa%20iman/d307d48f-a74e-4b20-9d25-c37081d418b6.jpeg',
-            'villa%20iman/d18cb2b8-d880-405d-bbc4-7d3ea4969f56.jpeg',
-            'villa%20iman/cf095f57-3282-4f93-ab5c-2e977e854cd5.jpeg',
-            'villa%20iman/c534c17b-4c7f-4857-aa38-dfd6ec0f07e4.jpeg',
-            'villa%20iman/ab7f15d2-318b-4eb9-a779-b883a6ee5c03.jpeg',
-            'villa%20iman/a298805f-24b0-4c42-a2db-cef601a33188.jpeg',
-            'villa%20iman/a10a3b2d-543e-41cd-b4a6-f1c62d56fc8e.jpeg',
-            'villa%20iman/5667a258-fc07-4473-bbdd-5177098dfe6a.jpeg',
-            'villa%20iman/81459a13-8e8e-4a73-aff2-8a8eb916d970.jpeg',
-            'villa%20iman/442f141c-e0a0-4fa5-afac-cb96cbd6f069.jpeg',
-            'villa%20iman/112f3be8-a922-4e9a-8ce0-d74e9a9845a9.jpeg',
-            'villa%20iman/97e655c0-dd70-44e2-a45e-2d39b0dd9d92.jpeg',
-            'villa%20iman/073c86a4-4198-4286-b9e3-3101668e9b0a.jpeg',
-            'villa%20iman/054ba600-4300-4f1e-a707-a791ddf06435.jpeg',
-            'villa%20iman/30b06f40-7d1f-4f75-97f2-feeac8ce408b.jpeg',
-            'villa%20iman/07d64ded-ac07-4c5f-8e19-d3d09903474f.jpeg'
         ]
     },
     sonia: {
@@ -2821,13 +2784,6 @@ const villaTranslations = {
         es: 'Dominio excepcional situado a veinticinco minutos del centro, en el corazón del prestigioso marco de la Palmeraie. Extendiéndose sobre un parque majestuoso de dos hectáreas, este rincón verde ofrece un marco atemporal, combinando serenidad absoluta y prestigio, para eventos excepcionales o estancias inolvidables en grupo. El dominio se compone de tres villas independientes que totalizan diecisiete suites de gran lujo, cada una con su propio baño privado. Tres piscinas climatizadas permiten disfrutar de la suavidad de Marrakech durante todo el año en un marco refinado y exclusivo.',
         it: 'Dominio eccezionale situato a venticinque minuti dal centro, nel cuore del prestigioso contesto della Palmeraie. Estendendosi su un parco maestoso di due ettari, questo angolo verde offre un ambiente senza tempo, unendo serenità assoluta e prestigio, per eventi eccezionali o soggiorni indimenticabili in gruppo. Il dominio si compone di tre ville indipendenti che totalizzano diciassette suite di grande lusso, ognuna con il proprio bagno privato. Tre piscine riscaldate permettono di godere della dolcezza di Marrakech tutto l\'anno in un ambiente raffinato ed esclusivo.',
         de: 'Außergewöhnliches Anwesen, gelegen fünfundzwanzig Minuten vom Zentrum entfernt, im Herzen des prestigeträchtigen Rahmens der Palmeraie. Erstreckt sich über einen majestätischen zwei Hektar großen Park und bietet eine zeitlose Umgebung, die absolute Ruhe und Prestige vereint, für außergewöhnliche Veranstaltungen oder unvergessliche Gruppenaufenthalte. Das Anwesen besteht aus drei unabhängigen Villen mit insgesamt siebzehn Luxussuiten, jede mit eigenem privaten Badezimmer. Drei beheizte Pools ermöglichen es, die Milde von Marrakesch das ganze Jahr über in einer raffinierten und exklusiven Umgebung zu genießen.'
-    },
-    iman: {
-        fr: 'La Villa Iman est une magnifique propriété située dans la Palmeraie, à seulement 25 minutes du centre-ville, idéale pour un séjour au calme. Cette villa spacieuse dispose de dix chambres et peut accueillir jusqu\'à vingt personnes, sur un terrain de 10 000 m² offrant un cadre exceptionnel pour des séjours en groupe ou des événements privés.',
-        en: 'Villa Iman is a magnificent property located in the Palmeraie, just 25 minutes from downtown, ideal for a peaceful stay. This spacious villa has ten bedrooms and can accommodate up to twenty people, on a 10,000 m² plot offering an exceptional setting for group stays or private events.',
-        es: 'La Villa Iman es una magnífica propiedad ubicada en la Palmeraie, a solo 25 minutos del centro, ideal para una estancia tranquila. Esta villa espaciosa cuenta con diez habitaciones y puede alojar hasta veinte personas, en un terreno de 10 000 m² que ofrece un marco excepcional para estancias en grupo o eventos privados.',
-        it: 'La Villa Iman è una magnifica proprietà situata nella Palmeraie, a soli 25 minuti dal centro, ideale per un soggiorno tranquillo. Questa villa spaziosa dispone di dieci camere e può ospitare fino a venti persone, su un terreno di 10 000 m² che offre un ambiente eccezionale per soggiorni di gruppo o eventi privati.',
-        de: 'Die Villa Iman ist eine prächtige Immobilie in der Palmeraie, nur 25 Minuten vom Zentrum entfernt, ideal für einen ruhigen Aufenthalt. Diese geräumige Villa verfügt über zehn Schlafzimmer und kann bis zu zwanzig Personen beherbergen, auf einem 10.000 m² großen Grundstück, das eine außergewöhnliche Kulisse für Gruppenaufenthalte oder private Veranstaltungen bietet.'
     },
     sonia: {
         fr: 'Cette magnifique villa se trouve à 15 min du centre-ville, au sein du Golf d\'Amelkis. Cette propriété d\'exception dispose de six suites, offrant un séjour de prestige dans un cadre raffiné avec piscine privée et tous les équipements modernes pour votre confort.',
