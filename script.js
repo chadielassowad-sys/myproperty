@@ -179,45 +179,6 @@ const villasData = {
             'villa%20shirine/WhatsApp%20Image%202026-02-17%20at%2011.22.00%20AM%20(6).jpeg'
         ]
     },
-    sofia: {
-        name: 'Villa Sofia',
-        price: 800,
-        location: 'Route de Fès, Marrakech — 15 min du centre',
-        description: 'Somptueuse villa de six suites implantée sur la route de Fès, à quinze minutes du centre historique de Marrakech. Ses espaces lumineux, ses finitions haut de gamme et sa piscine chauffée en font l\'adresse idéale pour un séjour de prestige alliant intimité et raffinement.',
-        features: ['6 Suites', 'Piscine Chauffée', 'Wifi', 'Parking', 'Climatisation'],
-        images: [
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(1).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM.jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(2).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(3).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(4).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(5).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(6).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(7).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(8).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.56%20AM%20(9).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM.jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(1).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(2).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(3).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(4).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(5).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(6).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(7).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(8).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(9).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(10).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(11).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(12).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(13).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(14).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(15).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(16).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(17).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(18).jpeg',
-            'villa%20sofia/WhatsApp%20Image%202026-02-17%20at%2011.25.57%20AM%20(19).jpeg'
-        ]
-    },
     janna: {
         name: 'Villa Janna',
         price: 650,
@@ -853,7 +814,11 @@ const villasData = {
             'villa%20nour/d8b06246-bd76-4255-b136-21314cba3a9a.jpeg',
             'villa%20nour/e1c40e5e-c97e-4e20-87e4-28ebbf5ffe2b.jpeg',
             'villa%20nour/f91a136a-39f0-4a2a-90b8-26797892618d.jpeg',
-            'villa%20nour/fa718db6-135d-468e-92d5-6c9ff6eb0fec.jpeg'
+            'villa%20nour/fa718db6-135d-468e-92d5-6c9ff6eb0fec.jpeg',
+            'villa%20nour/9a492aec-3f66-45e6-bb6a-0c41e427a1e6.mp4',
+            'villa%20nour/WhatsApp%20Video%202026-02-21%20at%209.20.21%20PM.mp4',
+            'villa%20nour/WhatsApp%20Video%202026-02-21%20at%209.20.24%20PM.mp4',
+            'villa%20nour/WhatsApp%20Video%202026-02-21%20at%209.20.27%20PM.mp4'
         ]
     },
     safaa: {
@@ -2884,13 +2849,6 @@ const villaTranslations = {
         es: 'Refinada residencia de seis suites enclavada en la carretera de Fez, a quince minutos del corazón histórico de Marrakech. Con piscina climatizada y arquitectura cuidada, ofrece una atmósfera íntima y elegante para una estancia excepcional, lejos del bullicio de la medina.',
         it: 'Raffinata residenza di sei suite incastonata sulla strada per Fez, a quindici minuti dal cuore storico di Marrakech. Con piscina riscaldata e architettura curata, offre un\'atmosfera intima ed elegante per un soggiorno eccezionale, lontano dal trambusto della medina.',
         de: 'Raffinierte Residenz mit sechs Suiten an der Straße nach Fes, fünfzehn Minuten vom historischen Herzen von Marrakesch entfernt. Mit beheiztem Pool und sorgfältiger Architektur bietet sie eine intime und elegante Atmosphäre für einen außergewöhnlichen Aufenthalt, fernab vom Trubel der Medina.'
-    },
-    sofia: {
-        fr: 'Somptueuse villa de six suites implantée sur la route de Fès, à quinze minutes du centre historique de Marrakech. Ses espaces lumineux, ses finitions haut de gamme et sa piscine chauffée en font l\'adresse idéale pour un séjour de prestige alliant intimité et raffinement.',
-        en: 'Sumptuous six-suite villa located on the Fes road, fifteen minutes from the historic center of Marrakech. Its bright spaces, high-end finishes and heated pool make it the ideal address for a prestige stay combining intimacy and refinement.',
-        es: 'Suntuosa villa de seis suites ubicada en la carretera de Fez, a quince minutos del centro histórico de Marrakech. Sus espacios luminosos, acabados de alta gama y piscina climatizada la convierten en la dirección ideal para una estancia de prestigio que combina intimidad y refinamiento.',
-        it: 'Sontuosa villa di sei suite situata sulla strada per Fez, a quindici minuti dal centro storico di Marrakech. I suoi spazi luminosi, finiture di alta gamma e piscina riscaldata ne fanno l\'indirizzo ideale per un soggiorno di prestigio che combina intimità e raffinatezza.',
-        de: 'Prächtige Villa mit sechs Suiten an der Straße nach Fes, fünfzehn Minuten vom historischen Zentrum von Marrakesch entfernt. Ihre hellen Räume, hochwertigen Ausstattungen und der beheizte Pool machen sie zur idealen Adresse für einen Prestigeaufenthalt, der Intimität und Raffinesse vereint.'
     },
     janna: {
         fr: 'Charmante villa indépendante de cinq chambres établie dans le quartier résidentiel prisé de Targa, à dix minutes du centre-ville de Marrakech. Son jardin verdoyant invite à la détente et à la douceur de vivre, tandis que la piscine chauffée, disponible en option, vient parfaire ce cocon d\'intimité et d\'élégance.',
