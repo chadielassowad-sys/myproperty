@@ -617,6 +617,12 @@ body {
     transition: var(--transition);
 }
 
+/* Ajustement spécifique pour Villa Vini (images très zoomées) */
+.villa-card[data-villa="vini"] .villa-image img {
+    object-fit: contain;
+    background-color: #000; /* léger fond neutre autour si besoin */
+}
+
 .villa-card:hover .villa-image img,
 .villa-card:hover .villa-image video {
     transform: scale(1.08);
