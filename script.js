@@ -217,7 +217,7 @@ const villasData = {
         ]
     },
     youness: {
-        name: 'Domaine Youness',
+        name: 'Domaine Noam',
         price: 2800,
         location: 'Marrakech',
         description: 'Prestigieux domaine composé de trois villas indépendantes pouvant être privatisées en partie ou en totalité. Le domaine dispose d\'une villa de huit suites, d\'une villa de six suites et d\'une villa de cinq suites, offrant un espace de vie exceptionnel idéal pour les grands groupes, les événements privés et les séjours en famille. Chaque villa est aménagée avec raffinement pour garantir confort et intimité.',
@@ -231,28 +231,6 @@ const villasData = {
             'domaine%20youness/WhatsApp%20Image%202026-02-17%20at%2011.26.59%20AM%20(5).jpeg',
             'domaine%20youness/WhatsApp%20Image%202026-02-17%20at%2011.26.59%20AM%20(6).jpeg',
             'domaine%20youness/WhatsApp%20Image%202026-02-17%20at%2011.26.59%20AM%20(7).jpeg'
-        ]
-    },
-    rayan: {
-        name: 'Domaine Rayan',
-        price: 2800,
-        location: 'Palmeraie, Marrakech — 25 min du centre',
-        description: 'Domaine d\'exception situé à vingt-cinq minutes du centre-ville, au cœur du cadre prestigieux de la Palmeraie. S\'étendant sur un parc majestueux de deux hectares, cet écrin de verdure offre un cadre hors du temps, alliant sérénité absolue et prestige, pour des événements d\'exception ou des séjours inoubliables en groupe. Le domaine se compose de trois villas indépendantes totalisant dix-sept suites de grand luxe, chacune disposant de sa propre salle de bains privative. Trois piscines chauffées permettent de profiter de la douceur de Marrakech tout au long de l\'année dans un cadre raffiné et exclusif.',
-        features: ['3 Villas Indépendantes', '17 Suites au Total', 'Villa 1: 6 Chambres', 'Villa 2: 6 Chambres', 'Villa 3: 5 Chambres', '3 Piscines Privées Chauffées', 'Parc de 2 Hectares', 'Salles de Bains Individuelles', 'Wifi', 'Parking', 'Télévision', 'Climatisation'],
-        images: [
-            'domaine%20ahmed/domaine-noam-17-chambre_-27.jpeg',
-            'domaine%20ahmed/domaine-noam-17-chambre_-16.jpeg',
-            'domaine%20ahmed/domaine-noam-17-chambre_-21.jpeg',
-            'domaine%20ahmed/domaine-noam-17-chambre_-22-1024x768.jpeg',
-            'domaine%20ahmed/domaine-noam-17-chambre_-3.jpeg',
-            'domaine%20ahmed/domaine-noam-17-chambre_-31.jpeg',
-            'domaine%20ahmed/domaine-noam-17-chambre_-32.jpeg',
-            'domaine%20ahmed/domaine-noam-17-chambre_-33.jpeg',
-            'domaine%20ahmed/domaine-noam-17-chambre_-36.jpeg',
-            'domaine%20ahmed/domaine-noam-17-chambre_-5.jpeg',
-            'domaine%20ahmed/domaine-noam-17-chambre_-50.jpeg',
-            'domaine%20ahmed/domaine-noam-17-chambre_-53.jpeg',
-            'domaine%20ahmed/domaine-noam-17-chambre_-54.jpeg'
         ]
     },
     sonia: {
@@ -473,7 +451,7 @@ const villasData = {
         ]
     },
     warda: {
-        name: 'Villa Warda',
+        name: 'Villa Eva',
         price: 690,
         location: 'Route de Fès Km 7. À 15 min du centre ville',
         description: 'Villa de luxe située sur la route de Fès au kilomètre 7, à seulement quinze minutes du centre-ville de Marrakech. Cette résidence sécurisée dispose de quatre suites de grand luxe, d\'une piscine chauffée et d\'équipements sportifs incluant un terrain de padel et un terrain de basket, pour un séjour complet et raffiné. Les tarifs varient selon la période, contactez-nous pour plus d\'informations.',
@@ -530,6 +508,16 @@ const villasData = {
             'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(14).jpeg',
             'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(15).jpeg',
             'villa%20warda/WhatsApp%20Image%202026-02-18%20at%207.55.57%20PM%20(16).jpeg'
+        ]
+    },
+    vini: {
+        name: 'Villa Vini',
+        price: 700,
+        location: 'Sur golf — 15 min du centre',
+        description: 'Villa située sur un golf à 15 minutes du centre de Marrakech. Elle dispose de cinq suites et d\'une piscine chauffée, idéale pour un séjour de prestige.',
+        features: ['5 Suites', 'Piscine Chauffée', 'Sur Golf', '15 min du centre'],
+        images: [
+            'logo.png'
         ]
     },
     fara: {
@@ -822,7 +810,7 @@ const villasData = {
         ]
     },
     safaa: {
-        name: 'Villa Safaa',
+        name: 'Villa Myriam',
         price: 0,
         location: 'Route d\'Ourika Km 14 — 25 min du centre',
         description: 'Villa de 6 suites pouvant accueillir jusqu\'à 12 personnes, située à 25 minutes du centre-ville sur la route d\'Ourika au kilomètre 14. Cette propriété dispose d\'un complexe sportif avec terrain de foot five, padel, basket, ping-pong et pétanque, d\'une terrasse enterrée avec coin cosy, brasero et Smart TV extérieur. Piscine chauffée rénovée en pierre de Bali. Surface habitable de 500 m² sur un hectare sans vis à vis. Télévisions dans chaque suite.',
@@ -2863,13 +2851,6 @@ const villaTranslations = {
         es: 'Prestigioso dominio compuesto por tres villas independientes que pueden ser privatizadas parcial o totalmente. El dominio cuenta con una villa de ocho suites, una villa de seis suites y una villa de cinco suites, ofreciendo un espacio de vida excepcional ideal para grandes grupos, eventos privados y estancias familiares. Cada villa está amueblada con refinamiento para garantizar comodidad e intimidad.',
         it: 'Prestigioso dominio composto da tre ville indipendenti che possono essere privatizzate in parte o totalmente. Il dominio dispone di una villa di otto suite, una villa di sei suite e una villa di cinque suite, offrendo uno spazio abitativo eccezionale ideale per grandi gruppi, eventi privati e soggiorni in famiglia. Ogni villa è arredata con raffinatezza per garantire comfort e intimità.',
         de: 'Prestigeträchtiges Anwesen bestehend aus drei unabhängigen Villen, die teilweise oder vollständig privatisiert werden können. Das Anwesen verfügt über eine Villa mit acht Suiten, eine Villa mit sechs Suiten und eine Villa mit fünf Suiten und bietet außergewöhnlichen Wohnraum, ideal für große Gruppen, private Veranstaltungen und Familienaufenthalte. Jede Villa ist elegant eingerichtet, um Komfort und Privatsphäre zu gewährleisten.'
-    },
-    rayan: {
-        fr: 'Domaine d\'exception situé à vingt-cinq minutes du centre-ville, au cœur du cadre prestigieux de la Palmeraie. S\'étendant sur un parc majestueux de deux hectares, cet écrin de verdure offre un cadre hors du temps, alliant sérénité absolue et prestige, pour des événements d\'exception ou des séjours inoubliables en groupe. Le domaine se compose de trois villas indépendantes totalisant dix-sept suites de grand luxe, chacune disposant de sa propre salle de bains privative. Trois piscines chauffées permettent de profiter de la douceur de Marrakech tout au long de l\'année dans un cadre raffiné et exclusif.',
-        en: 'Exceptional estate located twenty-five minutes from downtown, in the heart of the prestigious Palmeraie setting. Extending over a majestic two-hectare park, this green haven offers a timeless setting, combining absolute serenity and prestige, for exceptional events or unforgettable group stays. The estate consists of three independent villas totaling seventeen luxury suites, each with its own private bathroom. Three heated pools allow you to enjoy the mildness of Marrakech year-round in a refined and exclusive setting.',
-        es: 'Dominio excepcional situado a veinticinco minutos del centro, en el corazón del prestigioso marco de la Palmeraie. Extendiéndose sobre un parque majestuoso de dos hectáreas, este rincón verde ofrece un marco atemporal, combinando serenidad absoluta y prestigio, para eventos excepcionales o estancias inolvidables en grupo. El dominio se compone de tres villas independientes que totalizan diecisiete suites de gran lujo, cada una con su propio baño privado. Tres piscinas climatizadas permiten disfrutar de la suavidad de Marrakech durante todo el año en un marco refinado y exclusivo.',
-        it: 'Dominio eccezionale situato a venticinque minuti dal centro, nel cuore del prestigioso contesto della Palmeraie. Estendendosi su un parco maestoso di due ettari, questo angolo verde offre un ambiente senza tempo, unendo serenità assoluta e prestigio, per eventi eccezionali o soggiorni indimenticabili in gruppo. Il dominio si compone di tre ville indipendenti che totalizzano diciassette suite di grande lusso, ognuna con il proprio bagno privato. Tre piscine riscaldate permettono di godere della dolcezza di Marrakech tutto l\'anno in un ambiente raffinato ed esclusivo.',
-        de: 'Außergewöhnliches Anwesen, gelegen fünfundzwanzig Minuten vom Zentrum entfernt, im Herzen des prestigeträchtigen Rahmens der Palmeraie. Erstreckt sich über einen majestätischen zwei Hektar großen Park und bietet eine zeitlose Umgebung, die absolute Ruhe und Prestige vereint, für außergewöhnliche Veranstaltungen oder unvergessliche Gruppenaufenthalte. Das Anwesen besteht aus drei unabhängigen Villen mit insgesamt siebzehn Luxussuiten, jede mit eigenem privaten Badezimmer. Drei beheizte Pools ermöglichen es, die Milde von Marrakesch das ganze Jahr über in einer raffinierten und exklusiven Umgebung zu genießen.'
     },
     sonia: {
         fr: 'Cette magnifique villa se trouve à 15 min du centre-ville, au sein du Golf d\'Amelkis. Cette propriété d\'exception dispose de six suites, offrant un séjour de prestige dans un cadre raffiné avec piscine privée et tous les équipements modernes pour votre confort.',
