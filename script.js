@@ -854,12 +854,12 @@ const villasData = {
         description: 'Villa de 4 suites avec piscine chauffée, située dans un domaine disposant d\'un terrain de padel et d\'un terrain de basket. Cette propriété offre un cadre idéal pour un séjour confortable et actif, alliant confort et équipements sportifs.',
         features: ['4 Suites', 'Piscine Chauffée', 'Terrain de Padel', 'Terrain de Basket'],
         images: [
-            'villa%20Alya/WhatsApp%20Image%202026-02-26%20at%207.20.13%20PM%20(5).jpeg',
             'villa%20Alya/WhatsApp%20Image%202026-02-26%20at%207.20.13%20PM.jpeg',
             'villa%20Alya/WhatsApp%20Image%202026-02-26%20at%207.20.13%20PM%20(1).jpeg',
             'villa%20Alya/WhatsApp%20Image%202026-02-26%20at%207.20.13%20PM%20(2).jpeg',
             'villa%20Alya/WhatsApp%20Image%202026-02-26%20at%207.20.13%20PM%20(3).jpeg',
             'villa%20Alya/WhatsApp%20Image%202026-02-26%20at%207.20.13%20PM%20(4).jpeg',
+            'villa%20Alya/WhatsApp%20Image%202026-02-26%20at%207.20.13%20PM%20(5).jpeg',
             'villa%20Alya/WhatsApp%20Image%202026-02-26%20at%207.20.13%20PM%20(6).jpeg',
             'villa%20Alya/WhatsApp%20Image%202026-02-26%20at%207.20.14%20PM.jpeg',
             'villa%20Alya/WhatsApp%20Image%202026-02-26%20at%207.20.14%20PM%20(1).jpeg',
