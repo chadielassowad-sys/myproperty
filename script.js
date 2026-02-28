@@ -24,8 +24,8 @@ const villasData = {
         description: 'Découvrez cette villa d\'exception dans la palmeraie de Marrakech, à seulement 25 minutes du centre-ville.',
         features: ['Wifi', 'Parking', 'Piscine Chauffée', 'Télévision', 'Climatisation'],
         images: [
-            'villarania/7641e018-467d-4057-b6a8-fc5c57c3dd6a.jpeg',
             'villarania/107b7831-4d9e-4bfe-9b1f-c9ed6d99ffa5.jpeg',
+            'villarania/7641e018-467d-4057-b6a8-fc5c57c3dd6a.jpeg',
             'villarania/26d6f3f1-239a-4136-882f-18023d97f1fb.jpeg',
             'villarania/9d1ebf36-cc22-47ff-adaf-7fbc78b7a526.jpeg',
             'villarania/8b8cf3bb-e0fb-40aa-b621-72867d0d6bf0.jpeg',
@@ -665,13 +665,23 @@ const villasData = {
         ]
     },
     complexe: {
-        name: 'Complexe Résidentiel de 6 Villas',
-        price: 400,
+        name: 'Domaine Aaron',
+        price: 600,
         location: 'Route d\'Amizmiz Km 8',
         description: 'Complexe résidentiel moderne composé de six villas identiques, toutes disposant de quatre suites. Ces propriétés très modernes offrent une piscine chauffée et un cadre contemporain idéal pour un séjour confortable et raffiné à proximité de Marrakech.',
         features: ['6 Villas', '4 Suites par Villa', 'Très Modernes', 'Piscine Chauffée'],
         images: [
             'complexe.mp4'
+        ]
+    },
+    emma: {
+        name: 'Villa Emma',
+        price: 820,
+        location: 'Marrakech',
+        description: 'Villa de 5 suites en front de golf, à 15 minutes du centre-ville. Dispose d\'une salle de cinéma et d\'une piscine chauffée.',
+        features: ['5 Suites', 'Front de Golf', 'À 15 min du centre', 'Salle de Cinéma', 'Piscine Chauffée'],
+        images: [
+            'volla%20emna/WhatsApp%20Video%202026-02-27%20at%2020.13.02.mp4'
         ]
     },
     sakan: {
@@ -808,7 +818,7 @@ const villasData = {
     },
     nour: {
         name: 'Villa Nour',
-        price: 0,
+        price: 650,
         location: 'Marrakech — 40 min du centre',
         description: 'Villa spacieuse située à quarante minutes du centre-ville de Marrakech. Cette propriété d\'exception dispose de huit suites et s\'étend sur un jardin de 10 000 m², offrant un cadre exceptionnel pour des séjours en groupe ou des événements privés dans un environnement verdoyant et paisible.',
         features: ['8 Suites', 'Jardin de 10 000 m²', 'Wifi', 'Piscine', 'Télévision', 'Climatisation', 'Parking'],
@@ -849,7 +859,7 @@ const villasData = {
     },
     alya: {
         name: 'Villa Alya',
-        price: 0,
+        price: 700,
         location: 'Marrakech',
         description: 'Villa de 4 suites avec piscine chauffée, située dans un domaine disposant d\'un terrain de padel et d\'un terrain de basket. Cette propriété offre un cadre idéal pour un séjour confortable et actif, alliant confort et équipements sportifs.',
         features: ['4 Suites', 'Piscine Chauffée', 'Terrain de Padel', 'Terrain de Basket'],
@@ -1788,7 +1798,7 @@ function openVillaDetail(villaId) {
         descEl.textContent = translatedDesc || villa.description;
     }
     
-    document.getElementById('vdPriceAmount').textContent = villa.price.toFixed(2) + '€';
+    document.getElementById('vdPriceAmount').textContent = villa.price === 0 ? 'Sur demande' : villa.price.toFixed(2) + '€';
 
     // Hero image
     updateVdHeroImage(false);
@@ -2848,6 +2858,13 @@ const villaTranslations = {
         es: 'Esta magnífica villa se encuentra a 15 min del centro, dentro del Golf de Amelkis. Esta propiedad excepcional cuenta con seis suites, ofreciendo una estancia de prestigio en un marco refinado con piscina privada y todas las comodidades modernas para su confort.',
         it: 'Questa magnifica villa si trova a 15 min dal centro, all\'interno del Golf di Amelkis. Questa proprietà eccezionale dispone di sei suite, offrendo un soggiorno di prestigio in un ambiente raffinato con piscina privata e tutti i comfort moderni per il vostro benessere.',
         de: 'Diese prächtige Villa befindet sich 15 Minuten vom Zentrum entfernt, im Amelkis Golf. Diese außergewöhnliche Immobilie verfügt über sechs Suiten und bietet einen Prestigeaufenthalt in einer raffinierten Umgebung mit privatem Pool und allen modernen Annehmlichkeiten für Ihren Komfort.'
+    },
+    emma: {
+        fr: 'Villa de 5 suites en front de golf, à 15 minutes du centre-ville. Dispose d\'une salle de cinéma et d\'une piscine chauffée.',
+        en: '5-suite villa on the golf course, 15 minutes from downtown. Features a cinema room and heated pool.',
+        es: 'Villa de 5 suites frente al campo de golf, a 15 minutos del centro. Cuenta con sala de cine y piscina climatizada.',
+        it: 'Villa di 5 suite fronte golf, a 15 minuti dal centro. Dispone di sala cinema e piscina riscaldata.',
+        de: 'Villa mit 5 Suiten am Golfplatz, 15 Minuten vom Zentrum. Mit Kinoraum und beheiztem Pool.'
     },
     sakan: {
         fr: 'Villa spacieuse située sur la route de Fès au kilomètre 10, idéale pour les événements et les séjours en groupe. Cette propriété dispose de dix-huit chambres et d\'une piscine non chauffée, offrant un cadre parfait pour organiser des événements privés ou des séjours en famille ou entre amis. Les tarifs varient selon le nombre de chambres utilisées.',
