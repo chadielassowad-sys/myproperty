@@ -820,8 +820,8 @@ const villasData = {
         name: 'Villa Nour',
         price: 650,
         location: 'Marrakech — 40 min du centre',
-        description: 'Villa spacieuse située à quarante minutes du centre-ville de Marrakech. Cette propriété d\'exception dispose de huit suites et s\'étend sur un jardin de 10 000 m², offrant un cadre exceptionnel pour des séjours en groupe ou des événements privés dans un environnement verdoyant et paisible.',
-        features: ['8 Suites', 'Jardin de 10 000 m²', 'Wifi', 'Piscine', 'Télévision', 'Climatisation', 'Parking'],
+        description: 'Villa spacieuse située à quarante minutes du centre-ville de Marrakech. Cette propriété d\'exception dispose de quatre suites et s\'étend sur un jardin de 2 500 m², offrant un cadre exceptionnel pour des séjours en groupe ou des événements privés dans un environnement verdoyant et paisible.',
+        features: ['4 Suites', 'Jardin de 2 500 m²', 'Wifi', 'Piscine', 'Télévision', 'Climatisation', 'Parking'],
         images: [
             'villa%20nour/06da02bc-5052-4753-b278-4d77074a279c.jpeg',
             'villa%20nour/162d4165-2fe5-487b-8e56-97eef8ee1d00.jpeg',
@@ -2888,11 +2888,11 @@ const villaTranslations = {
         de: 'Luxusvilla am Golf Argan, die einen raffinierten Aufenthalt in einer außergewöhnlichen Umgebung bietet. Diese Immobilie verfügt über fünf Luxussuiten und einen unbeheizten Pool und ist ideal für einen komfortablen und eleganten Aufenthalt in der Nähe der Greens.'
     },
     nour: {
-        fr: 'Villa spacieuse située à quarante minutes du centre-ville de Marrakech. Cette propriété d\'exception dispose de huit suites et s\'étend sur un jardin de 10 000 m², offrant un cadre exceptionnel pour des séjours en groupe ou des événements privés dans un environnement verdoyant et paisible.',
-        en: 'Spacious villa located forty minutes from downtown Marrakech. This exceptional property has eight suites and extends over a 10,000 m² garden, offering an exceptional setting for group stays or private events in a green and peaceful environment.',
-        es: 'Villa espaciosa situada a cuarenta minutos del centro de Marrakech. Esta propiedad excepcional cuenta con ocho suites y se extiende sobre un jardín de 10 000 m², ofreciendo un marco excepcional para estancias en grupo o eventos privados en un entorno verde y tranquilo.',
-        it: 'Villa spaziosa situata a quaranta minuti dal centro di Marrakech. Questa proprietà eccezionale dispone di otto suite e si estende su un giardino di 10 000 m², offrendo un ambiente eccezionale per soggiorni di gruppo o eventi privati in un ambiente verde e tranquillo.',
-        de: 'Geräumige Villa, gelegen vierzig Minuten vom Zentrum von Marrakesch entfernt. Diese außergewöhnliche Immobilie verfügt über acht Suiten und erstreckt sich über einen 10.000 m² großen Garten und bietet eine außergewöhnliche Kulisse für Gruppenaufenthalte oder private Veranstaltungen in einer grünen und friedlichen Umgebung.'
+        fr: 'Villa spacieuse située à quarante minutes du centre-ville de Marrakech. Cette propriété d\'exception dispose de quatre suites et s\'étend sur un jardin de 2 500 m², offrant un cadre exceptionnel pour des séjours en groupe ou des événements privés dans un environnement verdoyant et paisible.',
+        en: 'Spacious villa located forty minutes from downtown Marrakech. This exceptional property has four suites and extends over a 2,500 m² garden, offering an exceptional setting for group stays or private events in a green and peaceful environment.',
+        es: 'Villa espaciosa situada a cuarenta minutos del centro de Marrakech. Esta propiedad excepcional cuenta con cuatro suites y se extiende sobre un jardín de 2 500 m², ofreciendo un marco excepcional para estancias en grupo o eventos privados en un entorno verde y tranquilo.',
+        it: 'Villa spaziosa situata a quaranta minuti dal centro di Marrakech. Questa proprietà eccezionale dispone di quattro suite e si estende su un giardino di 2 500 m², offrendo un ambiente eccezionale per soggiorni di gruppo o eventi privati in un ambiente verde e tranquillo.',
+        de: 'Geräumige Villa, gelegen vierzig Minuten vom Zentrum von Marrakesch entfernt. Diese außergewöhnliche Immobilie verfügt über vier Suiten und erstreckt sich über einen 2.500 m² großen Garten und bietet eine außergewöhnliche Kulisse für Gruppenaufenthalte oder private Veranstaltungen in einer grünen und friedlichen Umgebung.'
     },
     safaa: {
         fr: 'Villa de 6 suites pouvant accueillir jusqu\'à 12 personnes, située à 25 minutes du centre-ville sur la route d\'Ourika au kilomètre 14. Cette propriété dispose d\'un complexe sportif avec terrain de foot five, padel, basket, ping-pong et pétanque, d\'une terrasse enterrée avec coin cosy, brasero et Smart TV extérieur. Piscine chauffée rénovée en pierre de Bali. Surface habitable de 500 m² sur un hectare sans vis à vis. Télévisions dans chaque suite.',
