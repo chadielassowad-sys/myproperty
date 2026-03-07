@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://myproperty.com/sitemap.xml
+Sitemap: https://mypropertymarrakech.com/sitemap.xml
 
 # Disallow specific paths if needed
 # Disallow: /admin/

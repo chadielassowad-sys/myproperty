@@ -6,7 +6,7 @@
     
     <!-- Homepage -->
     <url>
-        <loc>https://myproperty.com/</loc>
+        <loc>https://mypropertymarrakech.com/</loc>
         <lastmod>2026-02-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -14,7 +14,7 @@
     
     <!-- About Page -->
     <url>
-        <loc>https://myproperty.com/apropos.html</loc>
+        <loc>https://mypropertymarrakech.com/apropos.html</loc>
         <lastmod>2026-02-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -22,7 +22,7 @@
     
     <!-- Villa Pages (if you have individual pages) -->
     <url>
-        <loc>https://myproperty.com/#villas</loc>
+        <loc>https://mypropertymarrakech.com/#villas</loc>
         <lastmod>2026-02-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
