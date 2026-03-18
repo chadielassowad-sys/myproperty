@@ -2654,6 +2654,31 @@ body {
     color: var(--secondary-color);
 }
 
+.vd-share-btn {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    color: var(--text-dark);
+    border: 1.5px solid var(--border-color);
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.vd-share-btn:hover {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    background: var(--bg-cream);
+    transform: translateY(-1px);
+}
+
 .vd-price-note {
     text-align: center;
     font-size: 12px;

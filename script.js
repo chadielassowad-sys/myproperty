@@ -971,6 +971,25 @@ document.addEventListener('DOMContentLoaded', function() {
     initLanguageSelector();
     // Always apply saved language (fixes translation after reload)
     translatePage();
+
+    // Deeplink: rouvrir la villa à partir de l'URL (?villa=ID)
+    const handleVillaDeeplink = function() {
+        const villaId = new URLSearchParams(window.location.search).get('villa');
+        const detailModal = document.getElementById('villaDetailModal');
+        const isOpen = detailModal && detailModal.classList.contains('open');
+
+        if (!villaId || !villasData[villaId]) {
+            if (isOpen) closeVillaDetail({ updateUrl: false });
+            return;
+        }
+
+        if (!isOpen || currentVdVillaId !== villaId) {
+            openVillaDetail(villaId, { updateUrl: false });
+        }
+    };
+
+    window.addEventListener('popstate', handleVillaDeeplink);
+    handleVillaDeeplink();
     
     // Lancer la vidéo du complexe automatiquement
     const complexeVideo = document.getElementById('complexeVideo');
@@ -1778,13 +1797,73 @@ let currentVdImageIndex = 0;
 let currentVdImages = [];
 let currentVdVillaId = null;
 
-function openVillaDetail(villaId) {
+function setVillaUrlParam(villaId) {
+    try {
+        const url = new URL(window.location.href);
+        const current = url.searchParams.get('villa');
+        if (current === villaId) return;
+        url.searchParams.set('villa', villaId);
+        window.history.pushState({}, '', url.toString());
+    } catch (e) {
+        // Ignore URL sync errors
+    }
+}
+
+function clearVillaUrlParam() {
+    try {
+        const url = new URL(window.location.href);
+        if (!url.searchParams.has('villa')) return;
+        url.searchParams.delete('villa');
+        window.history.pushState({}, '', url.toString());
+    } catch (e) {
+        // Ignore URL sync errors
+    }
+}
+
+function shareVilla(villaId) {
+    const villa = villasData[villaId];
+    if (!villa) return;
+
+    let shareUrl = window.location.href;
+    try {
+        const url = new URL(window.location.href);
+        url.searchParams.set('villa', villaId);
+        shareUrl = url.toString();
+    } catch (e) {
+        // Keep current URL as fallback
+    }
+
+    const shareData = {
+        title: villa.name,
+        text: `Villa ${villa.name} à Marrakech`,
+        url: shareUrl
+    };
+
+    if (navigator.share) {
+        navigator.share(shareData).catch(() => {});
+        return;
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(shareUrl)
+            .then(() => showMessage('Lien copié !', 'success'))
+            .catch(() => window.prompt('Lien à partager :', shareUrl));
+        return;
+    }
+
+    window.prompt('Lien à partager :', shareUrl);
+}
+
+function openVillaDetail(villaId, options = {}) {
+    const { updateUrl = true } = options;
     const villa = villasData[villaId];
     if (!villa) return;
 
     currentVdVillaId = villaId;
     currentVdImages = villa.images;
     currentVdImageIndex = 0;
+
+    if (updateUrl) setVillaUrlParam(villaId);
 
     // Topbar & Name
     document.getElementById('vdTopTitle').textContent = villa.name;
@@ -1853,25 +1932,31 @@ function openVillaDetail(villaId) {
 
     // Buttons
     document.getElementById('vdReserveBtn').onclick = () => {
-        closeVillaDetail();
+        closeVillaDetail({ updateUrl: false });
         setTimeout(() => openReservation(villaId), 300);
     };
     document.getElementById('vdGalleryBtn').onclick = () => {
-        closeVillaDetail();
+        closeVillaDetail({ updateUrl: false });
         setTimeout(() => openGallery(villaId), 300);
     };
+    const vdShareBtn = document.getElementById('vdShareBtn');
+    if (vdShareBtn) vdShareBtn.onclick = () => shareVilla(villaId);
 
     // Open modal
     const modal = document.getElementById('villaDetailModal');
+    if (!modal) return;
     modal.classList.add('open');
     modal.scrollTop = 0;
     document.body.style.overflow = 'hidden';
 }
 
-function closeVillaDetail() {
+function closeVillaDetail(options = {}) {
+    const { updateUrl = true } = options;
     const modal = document.getElementById('villaDetailModal');
+    if (!modal) return;
     modal.classList.remove('open');
     document.body.style.overflow = 'auto';
+    if (updateUrl) clearVillaUrlParam();
 }
 
 function updateVdHeroImage(animate) {
@@ -2057,6 +2142,7 @@ const translations = {
         perNightText: 'par nuit',
         reserveNow: 'Réserver maintenant',
         viewAllPhotos: 'Voir toutes les photos',
+        share: 'Partager',
         priceNote: 'Contactez-nous pour les disponibilités et tarifs sur mesure',
         photoGallery: 'Galerie photos',
         // Apropos page
@@ -2172,6 +2258,7 @@ const translations = {
         perNightText: 'per night',
         reserveNow: 'Reserve now',
         viewAllPhotos: 'View all photos',
+        share: 'Share',
         priceNote: 'Contact us for availability and custom rates',
         photoGallery: 'Photo gallery',
         // Apropos page
@@ -2287,6 +2374,7 @@ const translations = {
         perNightText: 'por noche',
         reserveNow: 'Reservar ahora',
         viewAllPhotos: 'Ver todas las fotos',
+        share: 'Compartir',
         priceNote: 'Contáctenos para disponibilidad y tarifas personalizadas',
         photoGallery: 'Galería de fotos',
         // Apropos page
@@ -2402,6 +2490,7 @@ const translations = {
         perNightText: 'per notte',
         reserveNow: 'Prenota ora',
         viewAllPhotos: 'Vedi tutte le foto',
+        share: 'Condividi',
         priceNote: 'Contattaci per disponibilità e tariffe personalizzate',
         photoGallery: 'Galleria fotografica',
         // Apropos page
@@ -2517,6 +2606,7 @@ const translations = {
         perNightText: 'pro Nacht',
         reserveNow: 'Jetzt reservieren',
         viewAllPhotos: 'Alle Fotos ansehen',
+        share: 'Teilen',
         priceNote: 'Kontaktieren Sie uns für Verfügbarkeit und individuelle Preise',
         photoGallery: 'Fotogalerie',
         // Apropos page
@@ -2782,6 +2872,8 @@ function translatePage() {
     if (vdReserveBtn) vdReserveBtn.textContent = t.reserveNow;
     const vdGalleryBtn = document.getElementById('vdGalleryBtn');
     if (vdGalleryBtn) vdGalleryBtn.textContent = t.viewAllPhotos;
+    const vdShareBtn = document.getElementById('vdShareBtn');
+    if (vdShareBtn) vdShareBtn.textContent = t.share;
     const vdPriceNote = document.querySelector('.vd-price-note');
     if (vdPriceNote) vdPriceNote.textContent = t.priceNote;
     const vdGalleryTitle = document.querySelector('.vd-gallery-title');
